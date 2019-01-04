@@ -1,0 +1,10 @@
+enableSentences false;player disableConversation true;player setVariable["BIS_noCoreConversations",true];player setSpeaker"NoVoice";player enableMimics false;
+removeAllWeapons player;removeGoggles player;removeHeadgear player;removeVest player;removeUniform player;removeAllAssignedItems player;clearAllItemsFromBackpack player;removeBackpack player;
+player setUnitLoadout(player getVariable["Saved_Loadout",[]]);
+setViewDistance(paramsArray select 6);
+if(paramsArray select 11==0)then{player enableStamina false;};
+if(!isACE)then{execVM"common\client\strobe\strobe.sqf";
+if((player isKindOf"B_medic_F")||(player isKindOf"B_recon_medic_F")&&{(!("Medikit"in items player))})then{player addItemToBackpack"Medikit";};};
+if(vehicleVarName player=="P4")then{[MaxD,Alock,num]execVM"common\client\CAS\addAction.sqf";};
+if(!isNil"BRS_cam")then{BRS_cam cameraEffect["internal","back"];BRS_cam camCommit 0;};
+player addItem"FirstAidKit";

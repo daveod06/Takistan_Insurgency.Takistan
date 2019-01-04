@@ -1,0 +1,13 @@
+if(isNil"server")then{hint"PLACE A GAME LOGIC NAMED SERVER";};
+EOSspawnV=compile preprocessFileLineNumbers"eos\fn\veh.sqf";
+EOSgrpHandlers=compile preprocessFileLineNumbers"eos\fn\setSkill.sqf";
+EOSfindSafePos=compile preprocessFileLineNumbers"eos\fn\findSafePos.sqf";
+EOSspawnGrp=compile preprocessFile"eos\fn\inf.sqf";
+EOSsetCargo=compile preprocessFile"eos\fn\cargo.sqf";
+EOSpat=compile preprocessFile"eos\fn\patrol.sqf";
+SHKpos=compile preprocessFile"eos\fn\pos.sqf";
+SHKfillHouse=compile preprocessFileLineNumbers"eos\fn\housePos.sqf";
+EOSgetUnitPool=compile preprocessFileLineNumbers"eos\unitPools.sqf";
+call compile preprocessFileLineNumbers"eos\aiSkill.sqf";
+EOSDAct={private _mkr=(_this select 0);
+{_x setMarkerColor"colorBlack";_x setMarkerAlpha 0;}forEach _mkr;};
