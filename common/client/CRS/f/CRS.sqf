@@ -1,6 +1,6 @@
 //DISPOSABLE AT
 if(CRS_DisposableAT)then{
-player addEventHandler["Fired",{if(_this select 1 in["launch_NLAW_F","CUP_launch_NLAW","CUP_launch_M136","CUP_launch_RPG18"])then{[_this select 0]spawn CRS_AT;};}];};
+player addEventHandler["Fired",{if(_this select 1 in["launch_NLAW_F"])then{[_this select 0]spawn CRS_AT;};}];};
 
 
 
@@ -27,7 +27,7 @@ _newFbang remoteExec["CRS_FB",0];};}];};
 
 //FRAGMENTATION GRENADE
 if(CRS_Fragmentation)then{
-CRS_NadeList=["HandGrenade","CUP_HandGrenade_RGO","CUP_HandGrenade_M67","CUP_HandGrenade_RGD5","CUP_HandGrenade_L109A1_HE","CUP_HandGrenade_L109A2_HE"];
+CRS_NadeList=["HandGrenade","rhs_mag_rgd5","rhs_mag_rgn","rhs_mag_rgo"];
 player addEventHandler["Fired",{if(_this select 5 in CRS_NadeList)then{
 _nade=(_this select 6);
 [_nade]spawn{

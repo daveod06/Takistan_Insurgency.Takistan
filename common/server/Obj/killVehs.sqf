@@ -13,8 +13,8 @@ sleep 3;
 _objvPos=selectRandom[[9000,9000,0],[5000,11000,0],[4000,4300,0]];
 _objvPos=[_objvPos,0,random 2750,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
 switch(true)do{
-case(isClass(configFile>>"cfgPatches">>"rhs_t72")):{objTar=[_objvPos,EAST,(configFile>>"CfgGroups">>"East">>"rhs_faction_tv">>"rhs_group_rus_tv_72">>"RHS_T72BAPlatoon")]call BIS_fnc_spawnGroup;};
-case(isClass(configFile>>"cfgPatches">>"CUP_TrackedVehicles_Core")):{objTar=[_objvPos,EAST,(configFile>>"CfgGroups">>"East">>"CUP_O_TK">>"Armored">>"CUP_O_TK_T55Platoon")]call BIS_fnc_spawnGroup;};
+case(common_server_Obj_killVehs_use_RHS_T72):{objTar=[_objvPos,EAST,common_server_Obj_killVehs_T72_Platoon]call BIS_fnc_spawnGroup;}; // FIXME
+//case(isClass(configFile>>"cfgPatches">>"CUP_TrackedVehicles_Core")):{objTar=[_objvPos,EAST,(configFile>>"CfgGroups">>"East">>"CUP_O_TK">>"Armored">>"CUP_O_TK_T55Platoon")]call BIS_fnc_spawnGroup;};
 default{objTar=[_objvPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Armored">>"OIA_TankPlatoon")]call BIS_fnc_spawnGroup;};};
 publicVariable "objTar";
 [objTar]call objSkill;

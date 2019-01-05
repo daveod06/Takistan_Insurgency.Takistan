@@ -10,6 +10,26 @@ _parameters=[
 ["MIN_SKILL",0],
 ["MAX_SKILL",0],
 ["DEBUG",false]];};
+case(isLOPTak):{
+_parameters=[
+["SIDE",civilian],
+["VEHICLES",
+[
+	"LOP_TAK_Civ_Landrover"
+	,"LOP_TAK_Civ_Offroad"
+	,"LOP_TAK_Civ_UAZ"
+	,"LOP_TAK_Civ_UAZ_Open"
+	,"LOP_TAK_Civ_Ural"
+	,"LOP_TAK_Civ_Ural_open"
+	,"C_Truck_02_fuel_F"
+	,"C_Truck_02_transport_F"]
+],
+["VEHICLES_COUNT",6],
+["MIN_SPAWN_DISTANCE",1000],
+["MAX_SPAWN_DISTANCE",1800],
+["MIN_SKILL",0],
+["MAX_SKILL",0],
+["DEBUG",false]];};
 case(isRHSRF):{
 _parameters=[
 ["SIDE",civilian],

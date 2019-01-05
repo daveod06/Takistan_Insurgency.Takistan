@@ -56,7 +56,7 @@ player addMPEventHandler["MPKilled",{_me=_this select 0;_tk=_this select 1;
 if((isPlayer _tk)&&{(_me!=_tk)})then{
 diag_log format["%1 was teamkilled by %2... Killer's UID is: %3",name _me,name _killer,getPlayerUID _killer];};}];
 null=[]execVM"common\server\gc.sqf";
-[west,["vaTsk","blTsk"],["Enter the American warehouse and access the Virtual Arsenal via the weapon racks to customize your loadout.","Gear Up!","GearMkr"],GearBox,false,4,false,"Rifle",true]call BIS_fnc_taskCreate;
+[west,["vaTsk","blTsk"],["Enter the Soviet warehouse and access the Virtual Arsenal via the weapon racks to customize your loadout.","Gear Up!","GearMkr"],GearBox,false,4,false,"Rifle",true]call BIS_fnc_taskCreate;
 [west,["wvTsk","blTsk"],["Wheeled Vehicles located in the motor pool","Motorized Vehicles","MRAPmkr"],[8217.231,2099.559,0],false,4,false,"Truck",true]call BIS_fnc_taskCreate;
 [west,["hTsk","blTsk"],["Transport helicopters located on the far side of the base, at the base of the mountain.","Rotory Wing Vehicles","helMkr"],[8215.742,1788.51,0],false,4,false,"Heli",true]call BIS_fnc_taskCreate;
 [west,["jTsk","blTsk"],["Close-Air-Support fixed wing aircraft located under green hangar tents along runway.","Close-Air-Support","fxwMkr"],[8195.889,1961.423,0],false,4,false,"Plane",true]call BIS_fnc_taskCreate;

@@ -1,6 +1,17 @@
 if(isDedicated)then{
 ctrlActivate((findDisplay 12)displayCtrl 107);
-setTerrainGrid 50;setShadowDistance 0;setViewDistance(paramsArray select 6);setObjectViewDistance(paramsArray select 6);enableEnvironment[false,false];
+
+Param_Grass = 2;
+Param_ViewDistance = 10000;
+Param_ObjectViewDistance = 5000;
+Param_DetailBlend = 12;
+
+setTerrainGrid (Param_Grass*3.125);
+setViewDistance (Param_ViewDistance);
+setObjectViewDistance [Param_ObjectViewDistance,Param_ObjectViewDistance*0.05];
+setDetailMapBlendPars [Param_DetailBlend,Param_DetailBlend*2.5];
+
+enableEnvironment[true,true];
 if(isClass(configFile>>"CfgPatches">>"task_force_radio"))then{activateAddons["task_force_radio","task_force_radio_items"];tf_no_auto_long_range_radio=true;tf_same_sw_frequencies_for_side=true;};
 //if(isClass(configFile>>"CfgPatches">>"acre_main"))then{
 //activateAddons["acre_api","acre_game","acre_main","acre_sys_antenna","acre_sys_attenuate","acre_sys_components","acre_sys_core","acre_sys_data","acre_sys_debug","acre_sys_fonts","acre_sys_gui","acre_sys_io","acre_sys_fonts","acre_sys_list","acre_sys_modes","acre_sys_prc117f","acre_sys_prc148","acre_sys_prc152","acre_sys_prc343","acre_sys_prc77","acre_sys_radio","acre_sys_retrans","acre_sys_rpc","acre_sys_server","acre_sys_signal","acre_sys_sounds","acre_sys_sync"];};

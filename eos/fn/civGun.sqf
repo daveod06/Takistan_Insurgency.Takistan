@@ -7,6 +7,7 @@ _unit=_this select 0;
 _gun="";
 switch(true)do{
 case(isCUPW):{_gunArr=["CUP_hgun_SA61","CUP_8Rnd_9x18_Makarov_M","CUP_hgun_MicroUzi","CUP_8Rnd_9x18_Makarov_M"];};
+case(isOKSVA):{_gunArr=["rhs_weap_savz61_folded","rhs_weap_makarov_pm","rhs_weap_tt33","rhs_weap_m38"];};
 default{_gunArr=["hgun_Pistol_01_F","hgun_PDW2000_F"];};};
 
 _gunMag="";
