@@ -150,24 +150,27 @@ private["_unit"];
 _unit=_this select 0;
 switch(true)do{
 case(isRHSRF):{
-if(round(random 4)==1)then{_unit addBackpackGlobal"rhs_rpg";sleep 1;_unit addMagazine"RPG7_F";_unit addMagazine"RPG7_F";_unit addWeaponGlobal"launch_RPG7_F";};
-switch(round(random 5))do{
-case 0:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",5];_unit addMagazines["rhs_VOG25",2];_unit addWeaponGlobal"rhs_weap_akm_gp25";};
-case 1:{_unit addMagazines["rhs_100Rnd_762x54mmR_green",3];_unit addWeaponGlobal"rhs_weap_pkp";};
-case 2:{_unit addMagazines["rhs_30Rnd_545x39_AK_green",5];_unit addWeaponGlobal"rhs_weap_aks74u";};
-case 3:{_unit addMagazines["rhs_100Rnd_762x54mmR_green",4];_unit addWeaponGlobal"rhs_weap_pkm";};
-case 4:{_unit addMagazines["rhs_10Rnd_762x54mmR_7N1",5];_unit addWeaponGlobal"rhs_weap_svd";};
-case 5:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",5];_unit addWeaponGlobal"rhs_weap_akm";};};};
-case(isCUPW):{
-if(round(random 4)==1)then{_unit addBackpackGlobal"CUP_B_RPGPack_Khaki";sleep 1;_unit addMagazine"RPG7_F";_unit addMagazine"RPG7_F";_unit addWeaponGlobal"launch_RPG7_F";};
-switch(round(random 6))do{
-case 0:{_unit addMagazines["CUP_30Rnd_762x39_AK47_M",5];_unit addWeaponGlobal"CUP_arifle_AK47";_unit addMagazines["CUP_20Rnd_B_765x17_Ball_M",3];_unit addWeaponGlobal"CUP_hgun_SA61";};
-case 1:{_unit addMagazines["CUP_30Rnd_545x39_AK_M",5];_unit addMagazines["CUP_1Rnd_HE_GP25_M",2];_unit addWeaponGlobal"CUP_arifle_AK74_GL";};
-case 2:{_unit addMagazines["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",3];_unit addWeaponGlobal"CUP_lmg_PKM";};
-case 3:{_unit addMagazines["CUP_30Rnd_545x39_AK_M",5];_unit addWeaponGlobal"CUP_arifle_AKS74";};
-case 4:{_unit addMagazines["CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",4];_unit addWeaponGlobal"CUP_RPK_74";};
-case 5:{_unit addMagazines["CUP_10x_303_M",5];_unit addWeaponGlobal"CUP_LeeEnfield";};
-case 6:{_unit addMagazines["CUP_30Rnd_762x39_AK47_M",5];_unit addWeaponGlobal"CUP_arifle_AKM";};};};
+if(round(random 4)==1)then{_unit addBackpackGlobal"rhs_rpg";sleep 1;_unit addMagazine"rhs_rpg7_PG7VL_mag";_unit addMagazine"rhs_rpg7_PG7VL_mag";_unit addWeaponGlobal"rhs_weap_rpg7";};
+switch(round(random 8))do{
+case 0:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addMagazines["rhs_VOG25",2];_unit addWeaponGlobal"rhs_weap_akm_gp25";};
+case 1:{_unit addMagazines["rhs_100Rnd_762x54mmR_green",3];_unit addWeaponGlobal"rhs_weap_pkm";};
+case 2:{_unit addMagazines["rhs_30Rnd_545x39_AK_green",6];_unit addWeaponGlobal"rhs_weap_ak74";};
+case 3:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"rhs_weap_akms";};
+case 4:{_unit addMagazines["rhs_10Rnd_762x54mmR_7N1",5];_unit addWeaponGlobal"40th_weap_svd_wood";};
+case 5:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"rhs_weap_akm";};};};
+case 6:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"hlc_rifle_ak47";};};};
+case 7:{_unit addMagazines["hlc_75Rnd_762x39_m_rpk",4];_unit addWeaponGlobal"hlc_rifle_rpk";};};};
+case 8:{_unit addMagazines["rhsgref_5Rnd_762x54_m38",10];_unit addWeaponGlobal"rhs_weap_m38_rail";};};};
+//case(isCUPW):{
+//if(round(random 4)==1)then{_unit addBackpackGlobal"CUP_B_RPGPack_Khaki";sleep 1;_unit addMagazine"RPG7_F";_unit addMagazine"RPG7_F";_unit addWeaponGlobal"launch_RPG7_F";};
+//switch(round(random 6))do{
+//case 0:{_unit addMagazines["CUP_30Rnd_762x39_AK47_M",5];_unit addWeaponGlobal"CUP_arifle_AK47";_unit addMagazines["CUP_20Rnd_B_765x17_Ball_M",3];_unit addWeaponGlobal"CUP_hgun_SA61";};
+//case 1:{_unit addMagazines["CUP_30Rnd_545x39_AK_M",5];_unit addMagazines["CUP_1Rnd_HE_GP25_M",2];_unit addWeaponGlobal"CUP_arifle_AK74_GL";};
+//case 2:{_unit addMagazines["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",3];_unit addWeaponGlobal"CUP_lmg_PKM";};
+//case 3:{_unit addMagazines["CUP_30Rnd_545x39_AK_M",5];_unit addWeaponGlobal"CUP_arifle_AKS74";};
+//case 4:{_unit addMagazines["CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",4];_unit addWeaponGlobal"CUP_RPK_74";};
+//case 5:{_unit addMagazines["CUP_10x_303_M",5];_unit addWeaponGlobal"CUP_LeeEnfield";};
+//case 6:{_unit addMagazines["CUP_30Rnd_762x39_AK47_M",5];_unit addWeaponGlobal"CUP_arifle_AKM";};};};
 default{if(round(random 4)==1)then{_unit addBackpackGlobal"B_Messenger_Coyote_F";sleep 1;_unit addMagazine"RPG7_F";_unit addMagazine"RPG7_F";_unit addWeaponGlobal"launch_RPG7_F";};
 switch(round(random 5))do{
 case 0:{_unit addMagazines["30Rnd_762x39_Mag_Green_F",5];_unit addWeaponGlobal"arifle_AK12_F";_unit addMagazines["10Rnd_9x21_Mag",3];_unit addWeaponGlobal"hgun_Pistol_01_F";};
