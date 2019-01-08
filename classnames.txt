@@ -103,3 +103,41 @@ this addPrimaryWeaponItem "optic_DMS"; // 8x
 "LOP_TKA_Ural_open",
 "LOP_TKA_BM21",
 "LOP_TKA_BTR60"
+
+
+
+
+this forceAddUniform "LOP_U_AM_Fatigue_01_5";
+this addVest "LOP_6sh46";
+this addBackpack "RD_54_69";
+this addHeadgear "LOP_H_Pakol";
+this addGoggles "rhsusf_shemagh_tan";
+this setFace "PersianHead_A3_01";
+
+
+this forceAddUniform "LOP_U_AM_Fatigue_01";
+this addVest "345th_RD_webbing";
+this addBackpack "rhssaf_alice_smb";
+this addHeadgear "LOP_H_Turban";
+this addGoggles "rhsusf_shemagh_grn";
+this setFace "PersianHead_A3_03";
+
+
+this forceAddUniform "LOP_U_AM_Fatigue_01_6";
+this addVest "rhs_vydra_3m";
+this addBackpack "rhsgref_wdl_alicepack";
+this addHeadgear "LOP_H_Turban_mask";
+this addGoggles "rhsusf_shemagh_grn";
+this setFace "PersianHead_A3_02";
+
+
+this forceAddUniform "LOP_U_AM_Fatigue_02_5";
+this addVest "rhsgref_alice_webbing";
+this addBackpack "rhs_rpg_empty";
+this addHeadgear "LOP_H_Shemag_BLK";
+this setFace "PersianHead_A3_02";
+
+
+this setSpeaker "male01per";
+this setSpeaker "male02per";
+this setSpeaker "male03per";
