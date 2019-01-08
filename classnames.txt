@@ -1,0 +1,105 @@
+
+this addHeadgear "LOP_H_Turban";
+
+["LOP_U_AM_Fatigue_03","LOP_U_AM_Fatigue_03_2","LOP_U_AM_Fatigue_03_4","LOP_U_AM_Fatigue_01_6"]
+
+this addVest "rhs_6sh46";
+this addVest "rhs_vydra_3m";
+this addVest "rhsgref_alice_webbing";
+
+
+"Flag_Red_F"
+
+
+
+
+
+
+// M76
+this addWeapon "rhs_weap_m76";
+this addItemToVest "rhsgref_10Rnd_792x57_m76";
+this addPrimaryWeaponItem "rhs_acc_nita"; // 4x sight
+
+// SA VZ61
+this addWeapon "rhs_weap_savz61_folded";
+this addItemToVest "rhsgref_20rnd_765x17_vz61";
+
+
+// nades
+this addItemToVest "rhs_mag_f1";
+this addItemToVest "rhs_mag_nspd";
+
+// M70 (AK)
+this addItemToVest "rhs_30Rnd_762x39mm";
+this addWeapon "rhs_weap_m70b1";
+
+// M84 
+this addItemToVest "rhs_100Rnd_762x54mmR_green";
+this addWeapon "rhs_weap_m84";
+
+
+
+
+this addPrimaryWeaponItem "rhsusf_acc_mrds"; // red dot
+this addPrimaryWeaponItem "optic_DMS"; // 8x
+
+
+
+
+"LOP_TKA_Infantry_Corpsman",
+"LOP_TKA_Infantry_Engineer",
+"LOP_TKA_Infantry_GL",
+"LOP_TKA_Infantry_AT",
+"LOP_TKA_Infantry_AT_Asst",
+"LOP_TKA_Infantry_MG",
+"LOP_TKA_Infantry_MG_Asst",
+"LOP_TKA_Infantry_Marksman",
+"LOP_TKA_Infantry_Officer",
+"LOP_TKA_Infantry_Rifleman",
+"LOP_TKA_Infantry_Rifleman",
+"LOP_TKA_Infantry_Rifleman",
+"LOP_TKA_Infantry_Rifleman_2",
+"LOP_TKA_Infantry_Rifleman_3",
+"LOP_TKA_Infantry_SL",
+"LOP_TKA_Infantry_TL"
+
+
+
+
+"LOP_TKA_Static_SPG9"
+"LOP_TKA_ZU23"
+"LOP_TKA_Static_DSHKM"
+
+
+
+
+"LOP_TKA_BM21"
+"LOP_TKA_UAZ"
+"LOP_TKA_UAZ_DshKM"
+"LOP_TKA_UAZ_Open"
+"LOP_TKA_UAZ_SPG"
+"LOP_TKA_Ural"
+"LOP_TKA_Ural_open"
+"LOP_TKA_T34"
+"LOP_TKA_BMP1"
+"LOP_TKA_Mi8MTV3_FAB"
+"LOP_TKA_Mi8MT_Cargo"
+
+
+
+"LOP_TKA_UAZ",
+"LOP_TKA_UAZ",
+"LOP_TKA_UAZ",
+"LOP_TKA_UAZ",
+"LOP_TKA_UAZ_Open",
+"LOP_TKA_UAZ_Open",
+"LOP_TKA_UAZ_DshKM",
+"LOP_TKA_UAZ_DshKM",
+"LOP_TKA_UAZ_SPG",
+"LOP_TKA_UAZ_SPG",
+"LOP_TKA_Ural",
+"LOP_TKA_Ural",
+"LOP_TKA_Ural_open",
+"LOP_TKA_Ural_open",
+"LOP_TKA_BM21",
+"LOP_TKA_BTR60"

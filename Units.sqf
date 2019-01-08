@@ -45,12 +45,12 @@ isOSKVA = true;
 // common/server/civ/fn.sqf
 isLOPTak = true;
 
-common/client/CAS/CAS.sqf
-common/client/CRS/f/AT.sqf
-common/client/CRS/f/CRS.sqf
-common/server/civ/fn.sqf
-common/server/civ/tCFG.sqf
-common/server/Obj/init.sqf
-common/server/vIED.sqf
-common/server/VRS.sqf
+// common/client/CAS/CAS.sqf
+// common/client/CRS/f/AT.sqf
+// common/client/CRS/f/CRS.sqf
+// common/server/civ/fn.sqf
+// common/server/civ/tCFG.sqf
+// common/server/Obj/init.sqf
+// common/server/vIED.sqf
+// common/server/VRS.sqf
 
