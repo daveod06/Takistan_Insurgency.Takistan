@@ -11,7 +11,7 @@ objMen=[];
 objState=true;publicVariable "objState";
 sleep 3;
 _objvPos=selectRandom[[5656,8894,0.25],[1797,11941,0.25],[1405,3544,0.6],[10301,2353,0.2],[11494,8259,0.6],[9807,11464,0.2],[5734,9962,0.3]];
-_sobjGrp=createGroup EAST;
+_sobjGrp=createGroup SIDE_INS;
 objTar=_sobjGrp createUnit["O_Survivor_F",_objvPos,[],0,"CAN_COLLIDE"];publicVariable "objTar";[objTar]call InsH;[objTar]call InsU;[objTar]call InsG;objTar setVariable["NOAI",1,false];objTar disableAI "path";
 _nObjPos=[_objvPos,random 50,100,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
 objMen=objMen+[objTar];
@@ -19,14 +19,14 @@ objTar setDir random 360;objTar addWeapon "arifle_Katiba_C_F";objTar addMagazine
 _random=(round(random 1)+2);
 for "_i" from 0 to _random do{
 _nObjPos=[getPos objTar,random 50,100,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Infantry">>"OIA_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
 [_spawnGroup,getPos objTar,100+random 400]call BIS_fnc_taskPatrol;
 [_spawnGroup]call objSkill;
 objMen=objMen+(units _spawnGroup);
 sleep 1;};
 [round(random 1)+1]call objST;
 _nObjPos=[_objvPos,random random 10,50,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Infantry">>"OIA_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
 [_spawnGroup,getPos objTar]call BIS_fnc_taskDefend;
 [_spawnGroup]call objSkill;
 objMen=objMen+(units _spawnGroup);
@@ -37,7 +37,7 @@ sleep 1;
 "objMkr"setMarkerText "";
 "objMkr"setMarkerAlpha 0;
 "objMkr"setMarkerType "mil_objective";
-[west,["t2"],["Intel reported a terrorist cell leader operating in a mosque.  Eliminate him.","Eliminate Cell Leader","objMkr"],getMarkerPos "objMkr",true,9,true,"Kill",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["t2"],["Intel reported a terrorist cell leader operating in a mosque.  Eliminate him.","Eliminate Cell Leader","objMkr"],getMarkerPos "objMkr",true,9,true,"Kill",true]call BIS_fnc_taskCreate;
 ["t2","Kill"]call BIS_fnc_taskSetType;
 
 waitUntil{!alive objTar};
@@ -49,7 +49,7 @@ waitUntil{!alive objTar};
 //_newRW=createVehicle[_rw,getMarkerPos "rwMkr",[],8,"CAN_COLLIDE"];_newRW setDir 331;
 
 sleep 300;
-//["t2",west]call BIS_fnc_deleteTask;
+//["t2",SIDE_OCCUPIERS]call BIS_fnc_deleteTask;
 {deleteVehicle _x}forEach objMen;
 sleep 1;
 objMen=[];

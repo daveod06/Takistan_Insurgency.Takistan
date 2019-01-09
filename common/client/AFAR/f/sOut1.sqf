@@ -14,9 +14,9 @@ if(assignedVehicleRole _x in _rtoSeat2)then{_nearPS pushBack _x;};};};};};
 
 if(count _nearPS>0)then{
 switch(side player)do{
-case WEST:{(ch6+5)enableChannel r_sCH;};
-case EAST:{(ch7+5)enableChannel r_sCH;};
-case INDEPENDENT:{(ch8+5)enableChannel r_sCH;};
+case SIDE_OCCUPIERS:{(ch6+5)enableChannel r_sCH;};
+case SIDE_INS:{(ch7+5)enableChannel r_sCH;};
+case SIDE_IND:{(ch8+5)enableChannel r_sCH;};
 };
 {if(player distance _x<=r_LRmax)then{_x remoteExec["r_Hush",_x];};}forEach _nearPS;}else{{_x enableChannel false}count[(ch6+5),(ch7+5),(ch8+5)];};
 hintSilent"";playSound"out1";private _nearPS=[];}else{call r_allOff;hintSilent"-----------------------------------------------------";playSound"in2";setCurrentChannel 5;};

@@ -12,7 +12,7 @@ case(isLOPTak):{_stType=["rhs_KORD_MSV","rhs_KORD_high_MSV","rhs_SPG9M_MSV","RHS
 default{_stType=["O_HMG_01_high_F","O_GMG_01_high_F","O_static_AT_F","O_static_AA_F"];_stType=selectRandom _stType;};};
 _posSt=[_objvPos,200,200,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
 _st=createVehicle[_stType,_posSt,[],0,"CAN_COLLIDE"];_st disableTIEquipment true;_st disableNVGEquipment true;_st lock 3;
-_stGrp=createGroup EAST;
+_stGrp=createGroup SIDE_INS;
 _stMan=_stGrp createUnit["O_Survivor_F",getPos _st,[],0,"CAN_COLLIDE"];
 _stMan enableSimulationGlobal false;_stMan hideObjectGlobal true;_stMan disableAI "ALL";_stMan setSpeaker "NoVoice";_stMan setBehaviour "CARELESS";
 _stMan unlinkItem "NVGoggles_OPFOR";_stMan enableMimics false;
@@ -22,7 +22,7 @@ _stMan assignAsGunner _st;[_stMan]orderGetIn true;_stMan moveInTurret[_st,[0]];}
 };
 if(isServer)then{
 if(isNil{missionNamespace getVariable"objState"})then{
-waitUntil{playersNumber WEST>0};
+waitUntil{playersNumber SIDE_OCCUPIERS>0};
 switch(floor(random 5))do{
 case 0:{null=[]execVM "common\server\Obj\killTow.sqf";};
 case 1:{null=[]execVM "common\server\Obj\killVeh.sqf";};

@@ -21,7 +21,7 @@ _jetType="B_Plane_CAS_01_F";
 //if(isCUPV)then{_jetType="CUP_B_A10_CAS_USA"}else{_jetType="B_Plane_CAS_01_F";};
 if(isOSKVA)then{_jetType="RHS_Su25SM_vvs"}else{_jetType="B_Plane_CAS_01_F";};
 
-casGrp=createGroup west;
+casGrp=createGroup SIDE_OCCUPIERS;
 if(_casType!="GUNS")then{
 _buzz=createVehicle[_jetType,_ranPos,[],0,"FLY"];clearItemCargoGlobal _buzz;
 _buzz setVectorDir[(_loc select 0)-(getPos _buzz select 0),(_loc select 1)-(getPos _buzz select 1),0];

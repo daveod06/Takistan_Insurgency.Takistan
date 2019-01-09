@@ -1,6 +1,6 @@
 // common/server/Obj/killVehs.sqf
-// (configFile>>"CfgGroups">>"East">>"rhs_faction_tv">>"rhs_group_rus_tv_72">>"RHS_T72BAPlatoon")
-common_server_Obj_killVehs_T72_Platoon = (configFile>>"CfgGroups">>"East">>"rhs_faction_tv">>"rhs_group_rus_tv_72">>"RHS_T72BAPlatoon")
+// (configFile>>"CfgGroups">>"EAST">>"rhs_faction_tv">>"rhs_group_rus_tv_72">>"RHS_T72BAPlatoon")
+//common_server_Obj_killVehs_T72_Platoon = (configFile>>"CfgGroups">>"EAST">>"rhs_faction_tv">>"rhs_group_rus_tv_72">>"RHS_T72BAPlatoon");
 common_server_Obj_killVehs_use_RHS_T72 = true;
 
 // common/server/gc.sqf
@@ -55,3 +55,6 @@ isLOPTak = true;
 // common/server/vIED.sqf
 // common/server/VRS.sqf
 
+SIDE_INS = WEST;
+SIDE_OCCUPIERS = EAST;
+SIDE_IND = INDEPENDENT;

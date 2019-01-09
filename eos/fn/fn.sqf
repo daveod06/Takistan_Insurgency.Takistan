@@ -8,7 +8,7 @@ case(isLOPTak):
     "LOP_U_AM_Fatigue_03",
     "LOP_U_AM_Fatigue_03_2",
     "LOP_U_AM_Fatigue_03_4",
-    "LOP_U_AM_Fatigue_01_6"
+    "LOP_U_AM_Fatigue_01_6",
     "LOP_U_AM_Fatigue_01_5",
     "LOP_U_AM_Fatigue_01",
     "LOP_U_AM_Fatigue_02_5"
@@ -105,11 +105,11 @@ case 1:{_unit addBackpackGlobal "rhsgref_wdl_alicepack"; _unit addMagazines["rhs
 case 2:{_unit addMagazines["rhs_30Rnd_545x39_AK_green",6];_unit addWeaponGlobal"rhs_weap_ak74";};
 case 3:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"rhs_weap_akms";};
 case 4:{_unit addBackpackGlobal "RD_54_69"; _unit addMagazines["rhs_10Rnd_762x54mmR_7N1",5];_unit addWeaponGlobal"40th_weap_svd_wood";};
-case 5:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"rhs_weap_akm";};};};
-case 6:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"hlc_rifle_ak47";};};};
-case 7:{_unit addBackpackGlobal "RD_54_69"; _unit addMagazines["hlc_75Rnd_762x39_m_rpk",4];_unit addWeaponGlobal"hlc_rifle_rpk";};};};
-case 8:{_unit addMagazines["rhsgref_5Rnd_762x54_m38",10];_unit addWeaponGlobal"rhs_weap_m38_rail";};};};
-case 9:{_unit addMagazines["rhsgref_10Rnd_792x57_m76",10];_unit addWeaponGlobal"rhs_weap_m76";_unit addPrimaryWeaponItem "rhs_acc_nita";};};};
+case 5:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"rhs_weap_akm";};
+case 6:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"hlc_rifle_ak47";};
+case 7:{_unit addBackpackGlobal "RD_54_69"; _unit addMagazines["hlc_75Rnd_762x39_m_rpk",4];_unit addWeaponGlobal"hlc_rifle_rpk";};
+case 8:{_unit addMagazines["rhsgref_5Rnd_762x54_m38",10];_unit addWeaponGlobal"rhs_weap_m38_rail";};
+case 9:{_unit addMagazines["rhsgref_10Rnd_792x57_m76",10];_unit addWeaponGlobal"rhs_weap_m76";_unit addPrimaryWeaponItem "rhs_acc_nita";};
 case 10:{_unit addMagazines["rhs_30Rnd_762x39mm",6];_unit addWeaponGlobal"rhs_weap_m70b1";};};};
 //case(isCUPW):{
 //if(round(random 4)==1)then{_unit addBackpackGlobal"CUP_B_RPGPack_Khaki";sleep 1;_unit addMagazine"RPG7_F";_unit addMagazine"RPG7_F";_unit addWeaponGlobal"launch_RPG7_F";};

@@ -13,9 +13,9 @@ _maxHeight=if(count _setup>4)then{_setup select 4}else{false};
 _dbug=if(count _setup>5)then{_setup select 5}else{false};
 _cache=if(count _this>6)then{_this select 6}else{false};
 
-if(_side==EAST)then{_enemySide="east";_civZone=false;};
-if(_side==WEST)then{_enemySide="west";_civZone=false;};
-if(_side==INDEPENDENT)then{_enemySide="GUER";_civZone=false;};
+if(_side==SIDE_INS)then{_enemySide="WEST";_civZone=false;};
+if(_side==SIDE_OCCUPIERS)then{_enemySide="EAST";_civZone=false;};
+if(_side==SIDE_IND)then{_enemySide="GUER";_civZone=false;};
 if(_side==CIVILIAN)then{_enemySide="civ";_civZone=true;};
 if(_mA==0)then{_mAH=1;_mAN=0.5;};
 if(_mA==1)then{_mAH=0;_mAN=0;};

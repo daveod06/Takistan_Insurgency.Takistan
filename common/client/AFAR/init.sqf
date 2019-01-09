@@ -1,7 +1,7 @@
 if((!isClass(configFile>>"CfgPatches">>"task_force_radio"))&&{(!isClass(configFile>>"CfgPatches">>"acre_main"))})then{
 if(isServer)then{
-//if(INDEPENDENT getFriend EAST>0.6)then{};
-//if(INDEPENDENT getFriend WEST>0.6)then{};
+//if(SIDE_IND getFriend SIDE_INS>0.6)then{};
+//if(SIDE_IND getFriend SIDE_OCCUPIERS>0.6)then{};
 ch6Name="Support channel";publicVariable"ch6Name";
 ch7Name="Support channel";publicVariable"ch7Name";
 ch8Name="Support channel";publicVariable"ch8Name";

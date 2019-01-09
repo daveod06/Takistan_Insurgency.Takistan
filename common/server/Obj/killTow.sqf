@@ -20,7 +20,7 @@ objTar setDir random 360;
 _random=(round(random 2)+1);
 for "_i" from 0 to _random do{
 _nObjPos=[_objvPos,random 50,300,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Infantry">>"OIA_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
 [_spawnGroup,getPos objTar,100+random 300]call BIS_fnc_taskPatrol;
 objMen=objMen+(units _spawnGroup);
 [_spawnGroup]call objSkill;
@@ -28,7 +28,7 @@ sleep 1;};
 
 [round(random 2)+1]call objST;
 _nObjPos=[_objvPos,random 10,50,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Infantry">>"OIA_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
 [_spawnGroup,getPos objTar]call BIS_fnc_taskDefend;
 [_spawnGroup]call objSkill;
 objMen=objMen+(units _spawnGroup);
@@ -40,7 +40,7 @@ sleep 1;
 "objMkr"setMarkerColor "ColorWhite";
 "objMkr"setMarkerAlpha 0;
 "objMkr"setMarkerType "loc_Transmitter";
-[west,["t0"],["Intel reports the Taliban have setup their own communications tower and are operating around it.  Destroying the tower will disturb their operations in Takistan.","Destroy Tower","objMkr"],getMarkerPos "objMkr",true,9,true,"Destroy",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["t0"],["Intel reports the Taliban have setup their own communications tower and are operating around it.  Destroying the tower will disturb their operations in Takistan.","Destroy Tower","objMkr"],getMarkerPos "objMkr",true,9,true,"Destroy",true]call BIS_fnc_taskCreate;
 ["t0","Destroy"]call BIS_fnc_taskSetType;
 
 waitUntil{!alive objTar};
@@ -51,7 +51,7 @@ waitUntil{!alive objTar};
 //_rw=selectRandom rw1;
 //_newRW=createVehicle[_rw,getMarkerPos "rwMkr",[],8,"CAN_COLLIDE"];_newRW setDir 331;
 sleep 300;
-//["t0",west]call BIS_fnc_deleteTask;
+//["t0",SIDE_OCCUPIERS]call BIS_fnc_deleteTask;
 {deleteVehicle _x}forEach objMen;
 sleep 1;
 objMen=[];

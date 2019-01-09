@@ -1,6 +1,11 @@
 enableSaving false;
 
 call compile preprocessFileLineNumbers"Units.sqf";
+sleep 0.2;
+SIDE_INS = WEST;
+SIDE_OCCUPIERS = EAST;
+SIDE_IND = INDEPENDENT;
+
 
 if(isClass(configFile>>"CfgPatches">>"TPW_MODS"))then{endMission"END2";};
 if(isClass(configFile>>"CfgPatches">>"task_force_radio"))then{isTFAR=true;}else{isTFAR=false;};
@@ -46,26 +51,26 @@ null=[]execVM"eos\openMe.sqf";
 call compile preprocessFileLineNumbers"common\server\civ\serverFN.sqf";call compile preprocessFileLineNumbers"common\server\civ\cCFG.sqf";
 call compile preprocessFileLineNumbers"common\server\civ\fn.sqf";call compile preprocessFileLineNumbers"common\server\civ\tCFG.sqf";};
 null=[]execVM"common\server\ied.sqf";
-vIED1=[(getMarkerPos"NW"),2000,15,true,false,WEST]execVM"common\server\vIED.sqf";
-vIED2=[(getMarkerPos"NE"),2000,15,true,false,WEST]execVM"common\server\vIED.sqf";
-vIED3=[(getMarkerPos"SW"),2000,15,true,false,WEST]execVM"common\server\vIED.sqf";
-vIED4=[(getMarkerPos"SE"),2000,15,true,false,WEST]execVM"common\server\vIED.sqf";
+vIED1=[(getMarkerPos"NW"),2000,15,true,false,SIDE_OCCUPIERS]execVM"common\server\vIED.sqf";
+vIED2=[(getMarkerPos"NE"),2000,15,true,false,SIDE_OCCUPIERS]execVM"common\server\vIED.sqf";
+vIED3=[(getMarkerPos"SW"),2000,15,true,false,SIDE_OCCUPIERS]execVM"common\server\vIED.sqf";
+vIED4=[(getMarkerPos"SE"),2000,15,true,false,SIDE_OCCUPIERS]execVM"common\server\vIED.sqf";
 if(paramsArray select 3==1)then{0=[12,1000,300]execVM"common\server\civ\tpw_animals.sqf";};
 null=[]execVM"common\server\veh.sqf";
 execVM"common\server\safeZ.sqf";
 execVM"common\server\ctp\ctp.sqf";
-null=[[AIRBASE],WEST,true,75,false]execVM"common\client\BRS\BRS_launch.sqf";
+null=[[AIRBASE],SIDE_OCCUPIERS,true,75,false]execVM"common\client\BRS\BRS_launch.sqf";
 player addMPEventHandler["MPKilled",{_me=_this select 0;_tk=_this select 1;
 if((isPlayer _tk)&&{(_me!=_tk)})then{
 diag_log format["%1 was teamkilled by %2... Killer's UID is: %3",name _me,name _killer,getPlayerUID _killer];};}];
 null=[]execVM"common\server\gc.sqf";
-[west,["vaTsk","blTsk"],["Enter the Soviet warehouse and access the Virtual Arsenal via the weapon racks to customize your loadout.","Gear Up!","GearMkr"],GearBox,false,4,false,"Rifle",true]call BIS_fnc_taskCreate;
-[west,["wvTsk","blTsk"],["Wheeled Vehicles located in the motor pool","Motorized Vehicles","MRAPmkr"],[8217.231,2099.559,0],false,4,false,"Truck",true]call BIS_fnc_taskCreate;
-[west,["hTsk","blTsk"],["Transport helicopters located on the far side of the base, at the base of the mountain.","Rotory Wing Vehicles","helMkr"],[8215.742,1788.51,0],false,4,false,"Heli",true]call BIS_fnc_taskCreate;
-[west,["jTsk","blTsk"],["Close-Air-Support fixed wing aircraft located under green hangar tents along runway.","Close-Air-Support","fxwMkr"],[8195.889,1961.423,0],false,4,false,"Plane",true]call BIS_fnc_taskCreate;
-[west,["armTsk","blTsk"],["Light and heavy armored vehicles located South-West of tan hangars in base.","Armored Vehicles","armMkr"],[8098.501,2026.358,0],false,4,false,"Armor",true]call BIS_fnc_taskCreate;
-[west,["rTsk","blTsk"],["Maintenance Area: Refuel, rearm, and repair vehicle on the medical helipad on the runway.","Vehicle Maintenance","rearmMkr"],[8211.026,2031.173,0],false,4,false,"Repair",true]call BIS_fnc_taskCreate;
-[west,["blTsk"],["Points of interest in base, marked on your map.","Base Layout",""],objNull,false,4,false,"",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["vaTsk","blTsk"],["Enter the Soviet warehouse and access the Virtual Arsenal via the weapon racks to customize your loadout.","Gear Up!","GearMkr"],GearBox,false,4,false,"Rifle",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["wvTsk","blTsk"],["Wheeled Vehicles located in the motor pool","Motorized Vehicles","MRAPmkr"],[8217.231,2099.559,0],false,4,false,"Truck",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["hTsk","blTsk"],["Transport helicopters located on the far side of the base, at the base of the mountain.","Rotory Wing Vehicles","helMkr"],[8215.742,1788.51,0],false,4,false,"Heli",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["jTsk","blTsk"],["Close-Air-Support fixed wing aircraft located under green hangar tents along runway.","Close-Air-Support","fxwMkr"],[8195.889,1961.423,0],false,4,false,"Plane",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["armTsk","blTsk"],["Light and heavy armored vehicles located South-SIDE_OCCUPIERS of tan hangars in base.","Armored Vehicles","armMkr"],[8098.501,2026.358,0],false,4,false,"Armor",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["rTsk","blTsk"],["Maintenance Area: Refuel, rearm, and repair vehicle on the medical helipad on the runway.","Vehicle Maintenance","rearmMkr"],[8211.026,2031.173,0],false,4,false,"Repair",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["blTsk"],["Points of interest in base, marked on your map.","Base Layout",""],objNull,false,4,false,"",true]call BIS_fnc_taskCreate;
 null=[]execVM"common\server\Obj\init.sqf";
 execVM"common\client\AFAR\init.sqf";
 if(!isACE)then{

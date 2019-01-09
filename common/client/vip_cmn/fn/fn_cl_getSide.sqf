@@ -4,7 +4,7 @@ Parameters:
 	0: Object; object for which to find side.
 
 Returns:
-	Number; side (0 for Opfor, 1 for Blufor, 2 for Independent).
+	Number; side (0 for Opfor, 1 for Blufor, 2 for SIDE_IND).
 
 Example:
 	_side=[player]call vip_cmn_fnc_cl_getSide;

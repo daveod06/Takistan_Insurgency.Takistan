@@ -32,11 +32,11 @@ tpw_animals=//array of animals and their min / max flock sizes
 ["Fin_random_F",1,2,"(1-meadow)*(1+houses)*(1-forest)*(1-trees)*(1-sea)*(1-hills)"]];//mutt
 
 //PATROL FN
-beastWander={private["_beast","_beastPos"];
-_beast=_this select 0;_beastPos=getPos _beast;
-while{alive _beast}do{
+bSIDE_INSWander={private["_bSIDE_INS","_bSIDE_INSPos"];
+_bSIDE_INS=_this select 0;_bSIDE_INSPos=getPos _bSIDE_INS;
+while{alive _bSIDE_INS}do{
 sleep 20+random 15;
-_beast doMove _beastPos;
+_bSIDE_INS doMove _bSIDE_INSPos;
 };};
 //DELAY
 sleep 10;
@@ -112,7 +112,7 @@ _animal=_herd createUnit[_type,_randPos,[],3,""];
 //_animal setVariable["BIS_fnc_animalBehaviour_disable",true];_animal disableAI "FSM";
 _animal allowFleeing 0;
 _animal setDir random 360;
-[_animal]spawn beastWander;
+[_animal]spawn bSIDE_INSWander;
 //[_herd,getPos _animal,20+random 10]call BIS_fnc_taskPatrol;
 _herd setBehaviour"SAFE";
 _animal setVariable["tpw_animal_owner",[player],true];//mark it as owned by this player

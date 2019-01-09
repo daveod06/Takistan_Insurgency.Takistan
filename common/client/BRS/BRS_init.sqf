@@ -36,7 +36,7 @@ waitUntil{alive player};
 disableSerialization;
 if(count BRS_spawnPoints==0)then{hint "No BRS spawn points available";}else{createDialog "BRS_dialog";
 switch(side BRS_currentSpawn)do{
-case WEST:{BRS_cam attachTo[(vehicle BRS_currentSpawn),[BRS_cam_offset,-5.5,0],"neck"];};
+case SIDE_OCCUPIERS:{BRS_cam attachTo[(vehicle BRS_currentSpawn),[BRS_cam_offset,-5.5,0],"neck"];};
 default{BRS_cam attachTo[BRS_currentSpawn,[BRS_cam_offset,-5.5,0]];};};
 BRS_cam cameraEffect["internal","back"];
 BRS_cam camCommit 0;

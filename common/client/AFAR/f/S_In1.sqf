@@ -23,9 +23,9 @@ if(count _nearPS>0)then{private _c=([_nearPS,[],{player distance _x},"ASCEND"]ca
 if(_d1>r_LRmax)then{{_x enableChannel false}count[(ch6+5),(ch7+5),(ch8+5)];hintSilent"-----------------------------------------------------";playSound"in2";};
 if(_d1<=r_LRmax)then{hintSilent"Transmitting...";playSound"in0";
 switch(side player)do{
-case WEST:{(ch6+5)enableChannel r_sCH;};
-case EAST:{(ch7+5)enableChannel r_sCH;};
-case INDEPENDENT:{(ch8+5)enableChannel r_sCH;};
+case SIDE_OCCUPIERS:{(ch6+5)enableChannel r_sCH;};
+case SIDE_INS:{(ch7+5)enableChannel r_sCH;};
+case SIDE_IND:{(ch8+5)enableChannel r_sCH;};
 };
 {_x remoteExec["r_Fuzz3",_x];}forEach _nearPS;};private _c=objNull;private _d1=0;}else{{_x enableChannel false;}count[(ch6+5),(ch7+5),(ch8+5)];hintSilent"-----------------------------------------------------";playSound"in2";};
 private _nearPS=[];}else{{_x enableChannel false;}count[(ch6+5),(ch7+5),(ch8+5)];{_x radioChannelRemove[player];}forEach[ch6,ch7,ch8];hintSilent"-----------------------------------------------------";playSound"in2";};

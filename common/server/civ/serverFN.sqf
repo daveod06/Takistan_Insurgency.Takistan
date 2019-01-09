@@ -217,7 +217,7 @@ if(count _pos>0)then{
 _group=createGroup _side;
 _unit=_group createUnit[_unitClasses select floor random count _unitClasses,[0,0,100],[],random 360,"FORM"];//selectRandom
 _unit enableSimulation false;_unit hideObjectGlobal true;_unit disableAI"ALL";_unit allowDamage false;_unit setSpeaker"NoVoice";removeAllAssignedItems _unit;_unit enableMimics false;
-[_unit]execVM "eos\fn\randOP4.sqf";if(random 1<0.1)then{null=[_unit,"",100,25,west,1,0.1]execVM "eos\fn\civGun.sqf";}else{
+[_unit]execVM "eos\fn\randOP4.sqf";if(random 1<0.1)then{null=[_unit,"",100,25,SIDE_OCCUPIERS,1,0.1]execVM "eos\fn\civGun.sqf";}else{
 [_unit,["Get down!",{call civ_getDown}]]remoteExec["addAction",0];
 [_unit,["Get up!",{call civ_getUp}]]remoteExec["addAction",0];
 [_unit,["Halt!",{call civ_halt}]]remoteExec["addAction",0];

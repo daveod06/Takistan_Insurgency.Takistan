@@ -14,7 +14,7 @@ BRS_currentSpawn=(BRS_spawnPoints select BRS_selectSpawn);
 detach BRS_cam;
 BRS_cam_offset;
 switch(side BRS_currentSpawn)do{
-case WEST:{BRS_cam attachTo[(vehicle BRS_currentSpawn),[BRS_cam_offset,-5.5,0],"neck"];};
+case SIDE_OCCUPIERS:{BRS_cam attachTo[(vehicle BRS_currentSpawn),[BRS_cam_offset,-5.5,0],"neck"];};
 default{BRS_cam attachTo[BRS_currentSpawn,[BRS_cam_offset,-5.5,0]];};};
 
 _display=uiNamespace getVariable "BRS_RespawnDialog";

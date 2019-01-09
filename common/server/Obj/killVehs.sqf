@@ -13,9 +13,9 @@ sleep 3;
 _objvPos=selectRandom[[9000,9000,0],[5000,11000,0],[4000,4300,0]];
 _objvPos=[_objvPos,0,random 2750,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
 switch(true)do{
-case(common_server_Obj_killVehs_use_RHS_T72):{objTar=[_objvPos,EAST,common_server_Obj_killVehs_T72_Platoon]call BIS_fnc_spawnGroup;}; // FIXME
-//case(isClass(configFile>>"cfgPatches">>"CUP_TrackedVehicles_Core")):{objTar=[_objvPos,EAST,(configFile>>"CfgGroups">>"East">>"CUP_O_TK">>"Armored">>"CUP_O_TK_T55Platoon")]call BIS_fnc_spawnGroup;};
-default{objTar=[_objvPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Armored">>"OIA_TankPlatoon")]call BIS_fnc_spawnGroup;};};
+case(common_server_Obj_killVehs_use_RHS_T72):{objTar=[_objvPos,SIDE_INS,configFile>>"CfgGroups">>"EAST">>"rhs_faction_tv">>"rhs_group_rus_tv_72">>"RHS_T72BAPlatoon"]call BIS_fnc_spawnGroup;}; // FIXME
+//case(isClass(configFile>>"cfgPatches">>"CUP_TrackedVehicles_Core")):{objTar=[_objvPos,SIDE_INS,(configFile>>"CfgGroups">>"EAST">>"CUP_O_TK">>"Armored">>"CUP_O_TK_T55Platoon")]call BIS_fnc_spawnGroup;};
+default{objTar=[_objvPos,SIDE_INS,(configFile>>"CfgGroups">>"EAST">>"OPF_F">>"Armored">>"OIA_TankPlatoon")]call BIS_fnc_spawnGroup;};};
 publicVariable "objTar";
 [objTar]call objSkill;
 {if(!isAbleToBreathe _x)then{clearItemCargoGlobal _x;_x lock 3;_x allowCrewInImmobile true;_x setFuel 0;}else{[_x]execVM "eos\fn\randOP4.sqf";_x allowFleeing 0;};}forEach units objTar;
@@ -24,7 +24,7 @@ sleep 3;
 _random=(round(random 1)+1);
 for "_i" from 0 to _random do{
 _nObjPos=[_objvPos,random 50,1000,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Infantry">>"OIA_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
 [_spawnGroup,_objvPos,500+random 1000]call BIS_fnc_taskPatrol;
 objMen=objMen+(units _spawnGroup);
 [_spawnGroup]call objSkill;
@@ -32,7 +32,7 @@ sleep 1;};
 
 [floor(random 2)]call objST;
 _nObjPos=[_objvPos,random 200,200,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Infantry">>"OIA_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
 [_spawnGroup,_objvPos]call BIS_fnc_taskDefend;
 [_spawnGroup]call objSkill;
 objMen=objMen+(units _spawnGroup);
@@ -43,7 +43,7 @@ sleep 1;
 "objMkr"setMarkerText "";
 "objMkr"setMarkerAlpha 0;
 "objMkr"setMarkerType "mil_dot";
-[west,["t4"],["A hostile tank platoon is contesting an area and must be destroyed.","Destroy Tank Platoon","objMkr"],getMarkerPos "objMkr",true,9,true,"Destroy",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["t4"],["A hostile tank platoon is contesting an area and must be destroyed.","Destroy Tank Platoon","objMkr"],getMarkerPos "objMkr",true,9,true,"Destroy",true]call BIS_fnc_taskCreate;
 ["t4","Destroy"]call BIS_fnc_taskSetType;
 sleep 30;
 {_x disableAI"PATH"}forEach units objTar;
@@ -54,7 +54,7 @@ waitUntil{{!alive _x}forEach units objTar};
 //_rw=selectRandom rw1;
 //_newRW=createVehicle[_rw,getMarkerPos "rwMkr",[],8,"CAN_COLLIDE"];_newRW setDir 331;
 sleep 300;
-//["t4",west]call BIS_fnc_deleteTask;
+//["t4",SIDE_OCCUPIERS]call BIS_fnc_deleteTask;
 {deleteVehicle _x}forEach objMen+[objTar];
 sleep 1;
 objMen=[];

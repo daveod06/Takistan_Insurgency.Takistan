@@ -14,7 +14,7 @@ _gunMag="";
 if(_gun=="")then{_gun=selectRandom _gunArr;};
 _gunMag=(getArray(configFile>>"CfgWeapons">>_gun>>"magazines"))select 0;
 
-_civPos=[];_nearCiv=[];_nearCivLive=[];_victim="";_prevGrp=group _unit;_grp=createGroup EAST;
+_civPos=[];_nearCiv=[];_nearCivLive=[];_victim="";_prevGrp=group _unit;_grp=createGroup SIDE_INS;
 _unit allowFleeing 0;
 _skill=.2+random .2;
 _skills=[.3,.5,.8,1,.7,1,.8,1,1];

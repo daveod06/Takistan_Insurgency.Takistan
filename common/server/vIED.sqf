@@ -1,7 +1,7 @@
 /*Creates empty vehicles at set positions and some can have IEDs
 V1.8.4- By: Ghost ~ Modified by Phronk
 vbIEDs=[_locselpos,_rad,_maxcars,_ieds,_showmarks,_side]execVM "common\server\vbIEDs.sqf";
-vbIEDs=[(getMarkerPos "center"),350,14,true,false,WEST]execVM "common\server\vbIEDs.sqf";
+vbIEDs=[(getMarkerPos "center"),350,14,true,false,SIDE_OCCUPIERS]execVM "common\server\vbIEDs.sqf";
 */
 if(!isServer)exitWith{};
 _centerPosition=_this select 0;//position

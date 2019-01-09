@@ -1,4 +1,4 @@
-#define SAFEZONES [["safeMkr",30.8],["respawn_west",34]]
+#define SAFEZONES [["safeMkr",30.8],["respawn_east",34]]
 if(isDedicated)exitWith{};
 waitUntil{!isNull player};
 player addEventHandler["Fired",{if((_this select 2 isKindOf["Rifle",configFile>>"CfgWeapons"])||(_this select 2 isKindOf["Pistol",configFile>>"CfgWeapons"])||(_this select 2 isKindOf["LauncherCore",configFile>>"CfgWeapons"])||(_this select 2 isKindOf["MGun",configFile>>"CfgWeapons"])||(_this select 2 isKindOf["CannonCore",configFile>>"CfgWeapons"])||(_this select 2=="HandGrenadeMuzzle"))then{

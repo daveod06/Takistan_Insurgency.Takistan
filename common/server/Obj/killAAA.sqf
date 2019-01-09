@@ -26,7 +26,7 @@ sleep 3;
 _random=(round(random 2)+1);
 for "_i" from 0 to _random do{
 _nObjPos=[_objvPos,random 200,200,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Infantry">>"OIA_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
 [_spawnGroup,_objvPos,500+random 1000]call BIS_fnc_taskPatrol;
 objMen=objMen+(units _spawnGroup);
 [_spawnGroup]call objSkill;
@@ -35,7 +35,7 @@ sleep 1;};
 
 [floor(random 4)]call objST;
 _nObjPos=[_objvPos,random 200,200,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,EAST,(configFile>>"CfgGroups">>"East">>"OPF_F">>"Infantry">>"OIA_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
 [_spawnGroup,_objvPos]call BIS_fnc_taskDefend;
 [_spawnGroup]call objSkill;
 objMen=objMen+(units _spawnGroup);
@@ -47,7 +47,7 @@ sleep 1;
 "objMkr" setMarkerText "";
 "objMkr" setMarkerAlpha 0;
 "objMkr" setMarkerType "mil_dot";
-[west,["t5"],["Insurgent-manned anti-aircraft vehicle is threatening our airspace.  Neutralize the AA threat.","Neutralize AA","objMkr"],getMarkerPos "objMkr",true,9,true,"Destroy",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["t5"],["Insurgent-manned anti-aircraft vehicle is threatening our airspace.  Neutralize the AA threat.","Neutralize AA","objMkr"],getMarkerPos "objMkr",true,9,true,"Destroy",true]call BIS_fnc_taskCreate;
 ["t5","Destroy"]call BIS_fnc_taskSetType;
 
 waitUntil{!alive objTar};
@@ -56,7 +56,7 @@ waitUntil{!alive objTar};
 //_rw=selectRandom rw1;
 //_newRW=createVehicle[_rw,getMarkerPos "rwMkr",[],8,"CAN_COLLIDE"];_newRW setDir 331;
 sleep 300;
-//["t5",west]call BIS_fnc_deleteTask;
+//["t5",SIDE_OCCUPIERS]call BIS_fnc_deleteTask;
 {deleteVehicle _x}forEach objMen+[objTar];
 sleep 1;
 objMen=[];

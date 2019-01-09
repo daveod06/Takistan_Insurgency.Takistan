@@ -40,7 +40,7 @@ cache addMPEventHandler["MPKilled",{INS_waitforcache=true;_this spawn INS_fnCach
 cache setPos _cachePos;cache setDamage 0;
 /*rw2=["Box_NATO_Ammo_F","Box_NATO_Equip_F","B_Slingload_01_Fuel_F","B_Slingload_01_Repair_F","B_Slingload_01_Medevac_F","B_Slingload_01_Cargo_F","B_Slingload_01_Ammo_F","B_LSV_01_armed_F"];
 cacheTask={waitUntil{player distance cache<2.5};
-[west,["ct"],["Cache has been discovered!  Destroy it with an EXPLOSIVE SATCHEL!","Destroy Cache"],objNull,true,0,true,"Destroy",true]call BIS_fnc_taskCreate;};
+[SIDE_OCCUPIERS,["ct"],["Cache has been discovered!  Destroy it with an EXPLOSIVE SATCHEL!","Destroy Cache"],objNull,true,0,true,"Destroy",true]call BIS_fnc_taskCreate;};
 cacheRW={
 ["ct","SUCCEEDED",true]spawn BIS_fnc_taskSetState;
 _rw=selectRandom rw2;_newRW=createVehicle[_rw,getMarkerPos "rwMkr",[],8,"CAN_COLLIDE"];_newRW setDir 331;};

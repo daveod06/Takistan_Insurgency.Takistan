@@ -15,9 +15,9 @@
 	
   Examples:
 	null= [] execVM "BRS\BRS_launch.sqf";
-	null= [[],WEST,TRUE,50] execVM "BRS\BRS_launch.sqf";
-	null= [[WEST_Base,Common_Base],WEST,FALSE,0] execVM "BRS\BRS_launch.sqf";
-	null= [[East_Base,Common_Base],EAST,true,30] execVM "BRS\BRS_launch.sqf";	
-	this addAction ["Battlefield Re-spawn System", "BRS\BRS_launch.sqf", [[West_Base,Common_Base],west,true,25]];
+	null= [[],SIDE_OCCUPIERS,TRUE,50] execVM "BRS\BRS_launch.sqf";
+	null= [[SIDE_OCCUPIERS_Base,Common_Base],SIDE_OCCUPIERS,FALSE,0] execVM "BRS\BRS_launch.sqf";
+	null= [[SIDE_INS_Base,Common_Base],SIDE_INS,true,30] execVM "BRS\BRS_launch.sqf";	
+	this addAction ["Battlefield Re-spawn System", "BRS\BRS_launch.sqf", [[SIDE_OCCUPIERS_Base,Common_Base],SIDE_OCCUPIERS,true,25]];
 
 
