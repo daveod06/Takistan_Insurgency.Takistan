@@ -113,20 +113,24 @@ private["_debugMarkerName"];
 _side=[_this,"SIDE",civilian]call civTraffic_GetParamValue;
 _carList=[];
 switch(true)do{
-case(isCUPU):{_carList=[
-_this,"cars",["CUP_C_Datsun_Tubeframe","CUP_C_Datsun","CUP_C_Datsun_Plain","CUP_C_Datsun_Covered","CUP_C_Datsun_4seat","CUP_C_Skoda_White_CIV",
-"CUP_C_Skoda_Blue_CIV","CUP_C_Skoda_Red_CIV","CUP_C_Skoda_Green_CIV","CUP_C_Golf4_black_Civ","CUP_C_Golf4_white_Civ","CUP_C_UAZ_Unarmed_TK_CIV",
-"CUP_C_LR_Transport_CTK","CUP_C_Ural_Civ_01","CUP_C_Ural_Open_Civ_01"]]call civTraffic_GetParamValue;};
 case(isLOPTak):{_carList=[
 _this,"cars",[
-"LOP_TAK_Civ_Landrover"
-,"LOP_TAK_Civ_Offroad"
-,"LOP_TAK_Civ_UAZ"
-,"LOP_TAK_Civ_UAZ_Open"
-,"LOP_TAK_Civ_Ural"
-,"LOP_TAK_Civ_Ural_open"
-,"C_Truck_02_fuel_F"
-,"C_Truck_02_transport_F"
+"C_Truck_02_box_F",
+"C_Truck_02_covered_F",
+"C_Truck_02_fuel_F",
+"C_Truck_02_transport_F",
+"LOP_TAK_Civ_Landrover",
+"LOP_TAK_Civ_Offroad",
+"LOP_TAK_Civ_UAZ",
+"LOP_TAK_Civ_UAZ_Open",
+"LOP_TAK_Civ_Ural",
+"LOP_TAK_Civ_Ural_open",
+"RHS_Ural_Open_Civ_01",
+"RHS_Ural_Civ_01",
+"RHS_Ural_Open_Civ_02",
+"RHS_Ural_Civ_02",
+"RHS_Ural_Open_Civ_03",
+"RHS_Ural_Civ_03"
 ]]call civTraffic_GetParamValue;};
 default{_carList=[
 _this,"cars",["C_Offroad_01_F","C_Offroad_01_repair_F","C_Offroad_02_unarmed_F","C_Hatchback_01_F","C_SUV_01_F","C_Van_01_transport_F",
@@ -145,7 +149,6 @@ _debug=[_this,"DEBUG",false]call civTraffic_GetParamValue;
 if(_areaMarkerName!=""&&_hideAreaMarker)then{_areaMarkerName setMarkerAlpha 0;};
 
 sleep random 1;
-civTraffic_instanceIndex=civTraffic_instanceIndex+1;
 _currentInstanceIndex=civTraffic_instanceIndex;
 
 civTraffic_areaMarkerNames set[_currentInstanceIndex,_areaMarkerName];

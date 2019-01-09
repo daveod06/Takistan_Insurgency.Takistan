@@ -6,8 +6,8 @@ objST={
 _amount=random 4;_stType="";
 for "_i" from 0 to _amount do{
 switch(true)do{
-//case(isClass(configFile>>"cfgPatches">>"rhs_weapons")):{_stType=["rhs_KORD_MSV","rhs_KORD_high_MSV","rhs_SPG9M_MSV","RHS_ZU23_MSV"];_stType=selectRandom _stType;};
-case(isLOPTak):{_stType=["rhs_KORD_MSV","rhs_KORD_high_MSV","rhs_SPG9M_MSV","RHS_ZU23_MSV"];_stType=selectRandom _stType;};
+//case(isClass(configFile>>"cfgPatches">>"rhs_weapons")):{_stType=["rhs_KORD_MSV","rhs_KORD_high_MSV","rhs_SPG9M_MSV","RHS_ZU23_MSV","LOP_TKA_Static_DSHKM"];_stType=selectRandom _stType;};
+case(isLOPTak):{_stType=["rhs_KORD_MSV","rhs_KORD_high_MSV","rhs_SPG9M_MSV","RHS_ZU23_MSV","LOP_TKA_Static_DSHKM"];_stType=selectRandom _stType;};// FIXME
 //case(isClass(configFile>>"cfgPatches">>"CUP_TrackedVehicles_Core")):{_stType=["CUP_O_2b14_82mm_TK_INS","CUP_O_DSHKM_TK_INS","CUP_O_DSHKM_MiniTriPod_TK_INS","CUP_O_AGS_TK_INS","CUP_O_SPG9_TK_INS","CUP_O_ZU23_TK_INS","CUP_O_D30_AT_TK_INS","CUP_O_D30_TK_INS"];_stType=selectRandom _stType;};
 default{_stType=["O_HMG_01_high_F","O_GMG_01_high_F","O_static_AT_F","O_static_AA_F"];_stType=selectRandom _stType;};};
 _posSt=[_objvPos,200,200,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
