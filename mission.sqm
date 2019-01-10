@@ -1787,7 +1787,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={8297.4063,0,2125.7939};
-			name="GearMkr-INVESTIGATE";
+			name="GearMkr";
 			text="Gear";
 			type="Empty";
 			colorName="ColorGreen";
@@ -2168,7 +2168,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={8219.1807,0,2128.3191};
-			name="BL_Mkr1-INVESTIGATE";
+			name="BL_Mkr1";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=100;
@@ -17391,7 +17391,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={8290.2129,0,2143.7791};
-			name="safeMkr-INVESTIGATE";
+			name="safeMkr";
 			type="Empty";
 			alpha=0.49576423;
 			id=3033;
@@ -36696,7 +36696,7 @@ class Mission
 				position[]={8271.1016,296.21179,2178.7644};
 			};
 			name="DONTDELETE";
-			init="call{""BL_Mkr0"" setMarkerAlpha 0;""BL_Mkr1"" setMarkerAlpha 0;""BLUBaseMkr"" setMarkerAlpha 0.6;" \n "{_x allowDamage false;_x hideObjectGlobal true;}forEach nearestTerrainObjects[this,[""BUILDING"",""HOUSE""],70];}";
+			init="call{""BL_Mkr0"" setMarkerAlpha 0;""BL_Mkr1"" setMarkerAlpha 0;""BLUBaseMkr"" setMarkerAlpha 0.6;" \n "{_x allowDamage false;}forEach nearestTerrainObjects[this,[""BUILDING"",""HOUSE""],70];}";
 			id=5140;
 			type="Logic";
 		};
