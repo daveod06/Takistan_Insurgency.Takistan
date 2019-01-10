@@ -19,7 +19,7 @@ _dis=8000;
 _ranPos=[(_loc select 0)+_dis*sin _dir,(_loc select 1)+_dis*cos _dir,700];
 _jetType="B_Plane_CAS_01_F";
 //if(isCUPV)then{_jetType="CUP_B_A10_CAS_USA"}else{_jetType="B_Plane_CAS_01_F";};
-if(isOSKVA)then{_jetType="RHS_Su25SM_vvs"}else{_jetType="B_Plane_CAS_01_F";};
+if(isOKSVA)then{_jetType="RHS_Su25SM_vvs"}else{_jetType="B_Plane_CAS_01_F";};
 
 casGrp=createGroup SIDE_OCCUPIERS;
 if(_casType!="GUNS")then{

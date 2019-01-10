@@ -1,5 +1,8 @@
 class CfgFunctions
 {
+    #include "..\common\client\ais_injury\cfgFunctionsAIS.hpp"
+    #include "..\common\client\vip_cmn\fn\vip_cmn_fnc.hpp"
+    #include "..\common\client\vip_lit\fn\vip_lit_fnc.hpp"
     class ToothFunctions
 	{
 		class Tooth

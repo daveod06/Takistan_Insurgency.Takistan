@@ -150,11 +150,7 @@ class Params {
 class RscTitles {
 	#include "common\client\ais_injury\dialogs\rscTitlesAIS.hpp"
 };
-class CfgFunctions {
-	#include "common\client\ais_injury\cfgFunctionsAIS.hpp"
-	#include "common\client\vip_cmn\fn\vip_cmn_fnc.hpp"
-	#include "common\client\vip_lit\fn\vip_lit_fnc.hpp"
-};
+
 
 class CfgSounds {
 #include "common\client\vip_lit\resource\vip_lit_cfgSounds.hpp"

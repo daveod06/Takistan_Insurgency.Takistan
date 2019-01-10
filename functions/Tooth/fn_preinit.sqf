@@ -41,7 +41,7 @@ common_server_veh_light_recon_heli = "OKSVA_MI8MT";
 common_server_veh_cas_jet = "OKSVA_Su25SM";
 
 // eos/fn/fn.sqf
-isOSKVA = true;
+isOKSVA = true;
 
 // common/server/civ/fn.sqf
 isLOPTak = true;

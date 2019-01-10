@@ -149,6 +149,7 @@ _debug=[_this,"DEBUG",false]call civTraffic_GetParamValue;
 if(_areaMarkerName!=""&&_hideAreaMarker)then{_areaMarkerName setMarkerAlpha 0;};
 
 sleep random 1;
+civTraffic_instanceIndex=civTraffic_instanceIndex+1;
 _currentInstanceIndex=civTraffic_instanceIndex;
 
 civTraffic_areaMarkerNames set[_currentInstanceIndex,_areaMarkerName];
