@@ -1,13 +1,6 @@
 if(isDedicated)then{
 ctrlActivate((findDisplay 12)displayCtrl 107);
 
-call compile preprocessFileLineNumbers"Units.sqf";
-sleep 0.2;
-SIDE_INS = WEST;
-SIDE_OCCUPIERS = EAST;
-SIDE_IND = INDEPENDENT;
-
-
 Param_Grass = 2;
 Param_ViewDistance = 10000;
 Param_ObjectViewDistance = 5000;

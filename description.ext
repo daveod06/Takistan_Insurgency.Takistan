@@ -9,6 +9,8 @@ loadScreen="img\load.paa";
 
 class Header {gameType=Coop;minPlayers=1;maxPlayers=27;};
 
+#include "include\functions.hpp"
+
 enableDebugConsole=1;
 allowFunctionsRecompile=0;
 allowFunctionsLog=0;

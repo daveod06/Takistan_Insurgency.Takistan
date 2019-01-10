@@ -1,10 +1,3 @@
-call compile preprocessFileLineNumbers"Units.sqf";
-sleep 0.2;
-SIDE_INS = WEST;
-SIDE_OCCUPIERS = EAST;
-SIDE_IND = INDEPENDENT;
-
-
 call compile preprocessFileLineNumbers"map.sqf";
 setViewDistance(paramsArray select 6);setObjectViewDistance(paramsArray select 6);setTerrainGrid 50;setShadowDistance(paramsArray select 8);enableEnvironment[false,true];
 enableSentences false;player disableConversation true;player setVariable["BIS_noCoreConversations",true];player setSpeaker"NoVoice";player enableMimics false;

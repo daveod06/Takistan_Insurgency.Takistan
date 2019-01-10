@@ -1,12 +1,4 @@
 enableSaving false;
-
-call compile preprocessFileLineNumbers"Units.sqf";
-sleep 0.2;
-SIDE_INS = WEST;
-SIDE_OCCUPIERS = EAST;
-SIDE_IND = INDEPENDENT;
-
-
 if(isClass(configFile>>"CfgPatches">>"TPW_MODS"))then{endMission"END2";};
 if(isClass(configFile>>"CfgPatches">>"task_force_radio"))then{isTFAR=true;}else{isTFAR=false;};
 if(isClass(configFile>>"CfgPatches">>"acre_main"))then{isACRE=true;}else{isACRE=false;};
