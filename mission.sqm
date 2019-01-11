@@ -30183,7 +30183,7 @@ class Mission
 				skill=0.60000002;
 				lock="LOCKEDPLAYER";
 				fuel=0;
-				init="call{this attachTo [Platform1,[0,0,1.6]];this setDir 90;this setCaptive true;}";
+				init="";
 				name="vh8";
 				disableSimulation=1;
 			};
@@ -34430,6 +34430,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+                name="SovietGearBox";
 			};
 			id=5151;
 			type="Soviet_Basic_Weapons_70s_80s";

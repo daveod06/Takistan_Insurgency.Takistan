@@ -1,0 +1,3 @@
+[submodule "functions/ai-artillery"]
+	path = functions/ai-artillery
+	url = https://github.com/daveod06/ai-artillery.git
