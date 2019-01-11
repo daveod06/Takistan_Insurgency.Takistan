@@ -36,7 +36,7 @@ sleep 1;
 "objMkr"setMarkerText"";
 "objMkr"setMarkerAlpha 0;
 "objMkr"setMarkerType"mil_objective";
-[SIDE_OCCUPIERS,["t3"],["Intel reports that the Taliban are hiding an IED maker in a factory just to the north of Feruz Abad.  Kill him.","Kill IED Maker","objMkr"],getMarkerPos "objMkr",true,1,true,"Kill",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["t3"],["Intel reports that the Mujahideen are hiding an IED maker in a factory just to the north of Feruz Abad.  Kill him.","Kill IED Maker","objMkr"],getMarkerPos "objMkr",true,1,true,"Kill",true]call BIS_fnc_taskCreate;
 ["t3","Kill"]call BIS_fnc_taskSetType;
 
 waitUntil{!alive objTar};

@@ -45,7 +45,7 @@ if(count _cases==0)exitWith{};
 _intel removeAction _ID;
 _case=_cases select 0;
 if isNull _case exitWith{};
-deleteVehicle _case;player groupChat "I have obtained Taliban intel.";//call addIMkr;call iHint;
+deleteVehicle _case;player groupChat "I have obtained Mujahideen intel.";//call addIMkr;call iHint;
 _cache=cache;
 if(isNil "_cache")exitWith{hint "Intel suggests this place is clean.  Better check elsewhere.";};
 [nil,"iHint",true,false]spawn BIS_fnc_MP;

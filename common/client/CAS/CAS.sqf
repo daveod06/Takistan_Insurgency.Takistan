@@ -17,9 +17,8 @@ _loc=visiblePosition _lockobj;
 _dir=random 360;
 _dis=8000;
 _ranPos=[(_loc select 0)+_dis*sin _dir,(_loc select 1)+_dis*cos _dir,700];
-_jetType="B_Plane_CAS_01_F";
-//if(isCUPV)then{_jetType="CUP_B_A10_CAS_USA"}else{_jetType="B_Plane_CAS_01_F";};
-if(isOKSVA)then{_jetType="RHS_Su25SM_vvs"}else{_jetType="B_Plane_CAS_01_F";};
+_jetType=Tooth_OPFOR_CAS_jet_default;
+if(isOKSVA)then{_jetType=Tooth_OPFOR_CAS_jet}else{_jetType=Tooth_OPFOR_CAS_jet_default;};
 
 casGrp=createGroup SIDE_OCCUPIERS;
 if(_casType!="GUNS")then{
@@ -29,7 +28,7 @@ _buzz setVectorDir[(_loc select 0)-(getPos _buzz select 0),(_loc select 1)-(getP
 sleep 0.2;
 _dir=getDir _buzz;
 _buzz setVelocity[sin(_dir)*200,cos(_dir)*200,0];
-_pilot=casGrp createUnit["B_Pilot_F",_ranPos,[],0,"FORM"];
+_pilot=casGrp createUnit[Tooth_OPFOR_CAS_pilot,_ranPos,[],0,"FORM"];
 _pilot moveInDriver _buzz;
 _buzz setCaptive true;_buzz allowDamage false;
 _pilot enableMimics false;_pilot disableAI"SUPPRESSION";_pilot disableAI"AIMINGERROR";_pilot disableAI"TEAMSWITCH";_pilot moveInDriver _buzz;
@@ -142,11 +141,11 @@ if(alive _object)then{[MaxD,Alock,num]execVM"common\client\CAS\addAction.sqf";};
 };
 
 if(_casType=="GUNS")then{
-_fakePilot=casGrp createUnit["B_Pilot_F",[0,0,0],[],0,"can_collide"];_fakePilot allowDamage false;
+_fakePilot=casGrp createUnit[Tooth_OPFOR_CAS_pilot,[0,0,0],[],0,"can_collide"];_fakePilot allowDamage false;
 (leader casGrp)sideChat"HOG 1 copies.  Gun-run ETA 30 seconds...";
 tempLase=createVehicle["LaserTargetCBase",_loc,[],0,"can_collide"];publicVariable"tempLase";
 tempLase enableSimulation false;tempLase hideObjectGlobal true;
-tempLase setVariable["vehicle","B_Plane_CAS_01_F",true];
+tempLase setVariable["vehicle",Tooth_OPFOR_CAS_jet,true];
 tempLase setVariable["type",0,true];
 sleep 20;
 if(abortCas)exitWith{deleteVehicle tempLase;sleep 2;deleteVehicle _fakePilot;deleteGroup casGrp;};

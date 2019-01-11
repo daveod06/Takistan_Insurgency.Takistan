@@ -5,7 +5,7 @@ Strobe=false;
 StrobeON={
 Strobe=true;
 hint "Strobe ON";
-_strobeGear=["H_HelmetB_light","H_HelmetB_light_black","H_HelmetB_light_desert","H_HelmetB_light_grass","H_HelmetB_light_sand","H_HelmetB_light_snakeskin"];
+_strobeGear=Tooth_strobeGear_helmets;
 while{Strobe}do{
 if(vehicle player!=player)then{StrobeOFF}else{
 if((headgear player in _strobeGear)||("B_IR_Grenade" in magazines player))then{

@@ -5,8 +5,6 @@ common_server_Obj_killVehs_use_RHS_T72 = true;
 
 // common/server/gc.sqf
 common_server_gc_baseVs = [
-"B_MRAP_01_hmg_F","B_Heli_Transport_01_F","B_Heli_Transport_03_unarmed_F","B_Heli_Light_01_F","B_Heli_Attack_01_F","B_MBT_01_TUSK_F","I_APC_tracked_03_cannon_F","B_UAV_02_CAS_F","B_Heli_Light_01_armed_F","B_Plane_CAS_01_F",
-"rhsusf_m1025_d_m2","rhsusf_m1025_d_mk19","RHS_UH60M_d","RHS_CH_47F_light","rhsusf_m1a1aimd_usarmy","RHS_M2A2","RHS_AH64D_CS","RHS_MELB_AH6M_L","RHS_MELB_MH6M","RHS_A10",
 "OKSVA_BMP2",
 "OKSVA_BMP2D",
 "OKSVA_BRDM2",
@@ -46,6 +44,8 @@ isOKSVA = true;
 // common/server/civ/fn.sqf
 isLOPTak = true;
 
+isRHSRF = true;
+
 // common/client/CAS/CAS.sqf
 // common/client/CRS/f/AT.sqf
 // common/client/CRS/f/CRS.sqf
@@ -54,6 +54,26 @@ isLOPTak = true;
 // common/server/Obj/init.sqf
 // common/server/vIED.sqf
 // common/server/VRS.sqf
+
+// common/client/CAS/track.sqf
+// common/client/HALO/fn.sqf
+// common/client/HALO/HALO.sqf
+// common/client/Strobe/strobe.sqf
+// onPlayerRespawn.sqf
+
+Tooth_OPFOR_CAS_jet = "RHS_Su25SM_vvs";
+Tooth_OPFOR_CAS_jet_default = "O_Plane_CAS_02_F";
+Tooth_OPFOR_CAS_pilot = "OKSVA_Pilot_VVS";
+Tooth_OPFOR_CAS_pilot_default = "O_Pilot_F";
+Tooth_OPFOR_CAS_drone = "O_UAV_02_CAS_F";
+
+Tooth_marker_color_OPFOR = "ColorOPFOR";
+Tooth_marker_type_plane_OPFOR = "o_plane";
+
+Tooth_jump_helmet_type = "345th_jump_helmet"; // "H_CrewHelmetHeli_B"
+Tooth_strobeGear_helmets = ["H_HelmetB_light","H_HelmetB_light_black","H_HelmetB_light_desert","H_HelmetB_light_grass","H_HelmetB_light_sand","H_HelmetB_light_snakeskin"];
+Tooth_medic_class_1 = "OKSVA_Medic_MSV";
+Tooth_medic_class_1 = "OKSVA_Medic_VDV";
 
 SIDE_INS = WEST;
 SIDE_OCCUPIERS = EAST;

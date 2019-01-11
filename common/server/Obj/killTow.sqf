@@ -40,7 +40,7 @@ sleep 1;
 "objMkr"setMarkerColor "ColorWhite";
 "objMkr"setMarkerAlpha 0;
 "objMkr"setMarkerType "loc_Transmitter";
-[SIDE_OCCUPIERS,["t0"],["Intel reports the Taliban have setup their own communications tower and are operating around it.  Destroying the tower will disturb their operations in Takistan.","Destroy Tower","objMkr"],getMarkerPos "objMkr",true,9,true,"Destroy",true]call BIS_fnc_taskCreate;
+[SIDE_OCCUPIERS,["t0"],["Intel reports the Mujahideen have setup their own communications tower and are operating around it.  Destroying the tower will disturb their operations in Takistan.","Destroy Tower","objMkr"],getMarkerPos "objMkr",true,9,true,"Destroy",true]call BIS_fnc_taskCreate;
 ["t0","Destroy"]call BIS_fnc_taskSetType;
 
 waitUntil{!alive objTar};

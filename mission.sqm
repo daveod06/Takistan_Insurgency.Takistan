@@ -10933,7 +10933,7 @@ class Mission
 				textures="Blufor";
 			};
 			id=1142;
-			type="B_UAV_02_CAS_F";
+			type="O_UAV_02_CAS_F";
 			class CustomAttributes
 			{
 				class Attribute0

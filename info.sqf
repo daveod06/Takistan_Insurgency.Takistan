@@ -31,7 +31,7 @@ player createDiaryRecord["Diary",["Takistan Insurgency",
 "<center><img image='img\load.paa' width='385' height='192'/></center><br/><br/>
 <font face='PuristaMedium' size=20 color='#808000'>WHAT IS TAKISTAN INSURGENCY?</font></size><br/>
 <font face='PuristaMedium' size=12 color='#8E8E8E'>__________________________________</font></size><br/><br/>
-<font color='#FF0000'>RED</font> grid squares are areas occupied by enemies (Taliban).  Once you've eliminated all enemies in the area, the grid will turn <font color='#6699FF'>BLUE</font>.  Clear all <font color='#FF0000'>RED</font> grid squares on Takistan!<br/><br/>
+<font color='#FF0000'>RED</font> grid squares are areas occupied by enemies (Mujahideen).  Once you've eliminated all enemies in the area, the grid will turn <font color='#6699FF'>BLUE</font>.  Clear all <font color='#FF0000'>RED</font> grid squares on Takistan!<br/><br/>
 This mission is an homage to the ArmA 2 insurgency mission by Fireball / PogoMan<br/><br/>
 
 <font face='PuristaMedium' size=20 color='#808000'>WHAT IS THE OBJECTIVE?</font></size><br/>

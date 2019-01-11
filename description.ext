@@ -1,7 +1,7 @@
 author="Hustler (ATCAG)";
-OverviewTextLocked="Search buildings / question locals for intel, destroy caches, and eliminate Taliban insurgents in <t color='#ff0000'>RED</t> grid squares!";
+OverviewTextLocked="Search buildings / question locals for intel, destroy caches, and eliminate Mujahideen insurgents in <t color='#ff0000'>RED</t> grid squares!";
 OverviewPicture="img\load.paa";
-onLoadMission="Search buildings / question locals for intel, destroy caches, and eliminate Taliban insurgents in <t color='#ff0000'>RED</t> grid squares!";
+onLoadMission="Search buildings / question locals for intel, destroy caches, and eliminate Mujahideen insurgents in <t color='#ff0000'>RED</t> grid squares!";
 onLoadIntroTime=1;
 onLoadMissionTime=1;
 onLoadName="INSURGENCY: Takistan";

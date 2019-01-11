@@ -56,7 +56,7 @@ removeBackpack _target;
 sleep 0.5;
 _target addBackpack "B_Parachute";
 if((getPosATL _target select 2)>=8000)then{
-removeHeadgear _target;_target addHeadgear "H_CrewHelmetHeli_B";
+removeHeadgear _target;_target addHeadgear Tooth_jump_helmet_type;
 sleep 0.5;};
 
 hintSilent "";hint Localize "STR_ATM_hintjump";

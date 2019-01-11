@@ -14,7 +14,7 @@ _cam camSetTarget _object;
 _cam cameraEffect["Internal","Back"];
 _cam camCommit 0;
 sleep 3.5;
-titleText["<t size='1.5' shadow='2'>Eliminate Taliban rebels and find intel to destroy caches in <t color='#ff0000'>RED</t> grid squares.</t>","BLACK IN",10,true,true];
+titleText["<t size='1.5' shadow='2'>Eliminate Mujahideen rebels and find intel to destroy caches in <t color='#ff0000'>RED</t> grid squares.</t>","BLACK IN",10,true,true];
 sleep 10;
 _cam cameraEffect["Terminate","Back"];
 camDestroy _cam;};
