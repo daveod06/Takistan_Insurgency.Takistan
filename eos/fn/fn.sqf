@@ -108,7 +108,7 @@ case 4:{_unit addBackpackGlobal "RD_54_69"; _unit addMagazines["rhs_10Rnd_762x54
 case 5:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"rhs_weap_akm";};
 case 6:{_unit addMagazines["rhs_30Rnd_762x39mm_tracer",6];_unit addWeaponGlobal"hlc_rifle_ak47";};
 case 7:{_unit addBackpackGlobal "RD_54_69"; _unit addMagazines["hlc_75Rnd_762x39_m_rpk",4];_unit addWeaponGlobal"hlc_rifle_rpk";};
-case 8:{_unit addMagazines["rhsgref_5Rnd_762x54_m38",10];_unit addWeaponGlobal"rhs_weap_m38_rail";};
+case 8:{_unit addMagazines["rhsgref_5Rnd_762x54_m38",10];_unit addWeaponGlobal"rhs_weap_m38";};
 case 9:{_unit addMagazines["rhsgref_10Rnd_792x57_m76",10];_unit addWeaponGlobal"rhs_weap_m76";_unit addPrimaryWeaponItem "rhs_acc_nita";};
 case 10:{_unit addMagazines["rhs_30Rnd_762x39mm",6];_unit addWeaponGlobal"rhs_weap_m70b1";};};};
 //case(isCUPW):{
