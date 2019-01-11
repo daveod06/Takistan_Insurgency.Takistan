@@ -2409,7 +2409,7 @@ class Mission
 				timeout[]={2,2,2};
 				interuptable=1;
 				repeatable=1;
-				activationBy="WEST";
+				activationBy="EAST";
 				isRectangle=1;
 			};
 			id=186;
