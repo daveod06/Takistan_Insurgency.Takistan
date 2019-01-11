@@ -11,12 +11,18 @@ objMen=[];
 objState=true;publicVariable "objState";
 sleep 3;
 _objvPos=selectRandom[[8249,11249,0],[5100,11200,0],[10000,6400,0],[3699,5599,0]];
-_objvPos=[_objvPos,0,random 1500,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-switch(true)do{
-case(isOKSVA)):{objTar=createVehicle["OKSVA_GAZ66_ZU23",_objvPos,[],0,"CAN_COLLIDE"];};
-case(isClass(configFile>>"cfgPatches">>"rhsusf_vehicles")):{objTar=createVehicle["rhs_gaz66_zu23_vdv",_objvPos,[],0,"CAN_COLLIDE"];};
-//case(isClass(configFile>>"cfgPatches">>"CUP_TrackedVehicles_Core")):{objTar=createVehicle["CUP_O_Ural_ZU23_TKM",_objvPos,[],0,"CAN_COLLIDE"];};
-default{objTar=createVehicle["O_APC_Tracked_02_AA_F",_objvPos,[],0,"CAN_COLLIDE"];};};
+_objvPos=[_objvPos,0,random 1500,1,0,60*(pi/180),0,[]] call BIS_fnc_findSafePos;
+switch(true)do
+{
+	case(isOKSVA):
+	{
+		objTar=createVehicle["OKSVA_GAZ66_ZU23",_objvPos,[],0,"CAN_COLLIDE"];
+	};
+	default
+	{
+		objTar=createVehicle["O_APC_Tracked_02_AA_F",_objvPos,[],0,"CAN_COLLIDE"];
+	};
+};
 publicVariable "objTar";
 _objTar=createVehicleCrew objTar;_objTar=fullCrew objTar;clearItemCargoGlobal objTar;objTar lock 3;objTar setFuel .5;{_x allowFleeing 0;_x unlinkItem "NVGoggles_OPFOR";}forEach crew objTar;
 
