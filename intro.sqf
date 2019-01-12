@@ -21,10 +21,10 @@ camDestroy _cam;};
 if((!isACE)&&(!isTFAR)&&(!isACRE))then{
 hintSilent parseText format[
 "<t color='#f4c542' size='2' shadow='2'>WELCOME!</t><br/>
-Head to the weapon racks in the warehouse for your loadout...<br/><br/>
+Head to the weapon racks under the camo net by the mess hall for your loadout...<br/><br/>
 ______________<br/>
 • 'H' key to holster weapon<br/>
 • Set an in-game PUSH TO TALK key<br/>
 • Raise your VON / Microphone volumes"];}else{
 hintSilent parseText format["<t color='#f4c542' size='2' shadow='2'>WELCOME!</t><br/>
-Head to the weapon racks in the warehouse for your loadout..."];};
+Head to the weapon racks under the camo net by the mess hall for your loadout..."];};

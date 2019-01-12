@@ -5,39 +5,22 @@ _tempArr=[];
 
 switch(_faction==0) do
 { // INSURGENTS
-    case(isLOPTak):
-    {
-    	_InfPool=["LOP_AM_Infantry_Rifleman"];
-    	_ArmPool=["LOP_AM_BM21","LOP_TKA_T55","LOP_TKA_T34","LOP_AM_Nissan_PKM","LOP_AM_Offroad_M2","LOP_AM_UAZ_DshKM","LOP_AM_UAZ_SPG"];
-    	_MotPool=["LOP_AM_Landrover","LOP_AM_Offroad","LOP_AM_UAZ","LOP_AM_UAZ_Open","LOP_AM_UAZ_SPG","LOP_AM_UAZ_DshKM","LOP_AM_Nissan_PKM"];
-    	_ACHPool=["LOP_TKA_Mi8MTV3_FAB"];
-    	_CHPool=["RHS_Mi8amt_civilian"];
-    	_uavPool=[];
-    	_stPool=["LOP_AM_Kord",
-"LOP_AM_Static_DSHKM",
-"LOP_AM_Static_M2",
-"LOP_AM_Static_M2_MiniTripod",
-"LOP_AM_Static_SPG9",
-"LOP_AM_Static_ZU23"];
-    	_shipPool=[];
-    	_diverPool=[];
-    	_crewPool=["LOP_AM_Infantry_Rifleman"];
-    	_heliCrew=["LOP_AM_Infantry_Rifleman"];
-    };
-    default
-    {
-        _InfPool=["o_survivor_F"];	
-        _ArmPool=["O_G_Offroad_01_armed_F"];
-        _MotPool=["O_G_Offroad_01_F","O_G_Offroad_01_repair_F","O_G_Offroad_01_armed_F","O_G_Van_01_transport_F"];
-        _ACHPool=["O_Heli_Light_02_F"];
-        _CHPool=["O_Heli_Light_02_unarmed_F","O_Heli_Light_02_F"];
-        _uavPool=[];
-        _stPool=["O_Mortar_01_F","O_HMG_01_high_F","O_GMG_01_high_F","O_static_AT_F","O_static_AA_F"];
-        _shipPool=[];
-        _diverPool=[];
-        _crewPool=["o_survivor_F"];
-        _heliCrew=["o_survivor_F"];
-    };
+	_InfPool=["LOP_AM_Infantry_Rifleman"];
+	_ArmPool=["LOP_AM_BM21","LOP_TKA_T55","LOP_TKA_T34","LOP_AM_Nissan_PKM","LOP_AM_Offroad_M2","LOP_AM_UAZ_DshKM","LOP_AM_UAZ_SPG"];
+	_MotPool=["LOP_AM_Landrover","LOP_AM_Offroad","LOP_AM_UAZ","LOP_AM_UAZ_Open","LOP_AM_UAZ_SPG","LOP_AM_UAZ_DshKM","LOP_AM_Nissan_PKM"];
+	_ACHPool=["LOP_TKA_Mi8MTV3_FAB"];
+	_CHPool=["RHS_Mi8amt_civilian"];
+	_uavPool=[];
+	_stPool=["LOP_AM_Kord",
+        "LOP_AM_Static_DSHKM",
+        "LOP_AM_Static_M2",
+        "LOP_AM_Static_M2_MiniTripod",
+        "LOP_AM_Static_SPG9",
+        "LOP_AM_Static_ZU23"];
+	_shipPool=[];
+	_diverPool=[];
+	_crewPool=["LOP_AM_Infantry_Rifleman"];
+	_heliCrew=["LOP_AM_Infantry_Rifleman"];
 };
 
 if(_faction==1) then

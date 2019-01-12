@@ -69,7 +69,7 @@ createVehicle["Crater",(getPosATL _iedObj),[],0,"can_collide"];
 		_iedPos=getPosWorld _ied;
 		_mkrID=format["m %1",_iedPos];
 		_mkr=createMarker[_mkrID,getPosWorld _ied];
-		_mkr setMarkerShape"ICON";_mkr setMarkerType"mil_dot";_mkr setMarkerBrush"Solid";_mkr setMarkerAlpha 1;_mkr setMarkerColor"ColorSIDE_INS";
+		_mkr setMarkerShape"ICON";_mkr setMarkerType"mil_dot";_mkr setMarkerBrush"Solid";_mkr setMarkerAlpha 1;_mkr setMarkerColor"ColorWEST";
 		iedMkrs pushBack _mkr;};
 	};
 }forEach iedMkr;

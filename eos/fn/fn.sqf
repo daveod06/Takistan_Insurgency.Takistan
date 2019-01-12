@@ -30,6 +30,8 @@ default{_unif=[
 "U_I_C_Soldier_Para_5_F",
 "U_C_Mechanic_01_F"];};};
 removeUniform _unit;_unit forceAddUniform(selectRandom _unif);};
+
+
 InsV={
 private["_unit","_vests"];
 _unit=_this select 0;_vests=[];
@@ -56,6 +58,8 @@ default{_vests=[
 "V_HarnessO_brn",
 "V_LegStrapBag_coyote_F"];};};
 _unit addVest(selectRandom _vests);};
+
+
 CivV={
 private["_unit","_cVest"];
 _unit=_this select 0;_cVest=[];

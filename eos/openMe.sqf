@@ -31,7 +31,7 @@ null=[["MKR"],
       [INITIAL PAUSE, NUMBER OF WAVES, DELAY BETWEEN WAVES, INTEGRATE EOS, SHOW HINTS]
       ]call reinfSpawn;
 */
-winColor="colorSIDE_OCCUPIERS";badColor="colorRed";
+winColor="colorblue";badColor="colorRed";
 EOSdmg=1.7;
 
 null=[["pmkr8"],[0,0,0],[2,2,50],[0,0,0],[0,0],[1,25],[0,0,0],[0,1,700,SIDE_INS,FALSE,FALSE]]call EOSspawn;//FAR NORTH SIDE_OCCUPIERS MOUNTAIN PATROL #1

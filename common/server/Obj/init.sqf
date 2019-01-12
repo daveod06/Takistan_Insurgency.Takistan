@@ -13,7 +13,7 @@ default{_stType=["O_HMG_01_high_F","O_GMG_01_high_F","O_static_AT_F","O_static_A
 _posSt=[_objvPos,200,200,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
 _st=createVehicle[_stType,_posSt,[],0,"CAN_COLLIDE"];_st disableTIEquipment true;_st disableNVGEquipment true;_st lock 3;
 _stGrp=createGroup SIDE_INS;
-_stMan=_stGrp createUnit["O_Survivor_F",getPos _st,[],0,"CAN_COLLIDE"];
+_stMan=_stGrp createUnit["LOP_AM_Infantry_Rifleman",getPos _st,[],0,"CAN_COLLIDE"];
 _stMan enableSimulationGlobal false;_stMan hideObjectGlobal true;_stMan disableAI "ALL";_stMan setSpeaker "NoVoice";_stMan setBehaviour "CARELESS";
 _stMan unlinkItem "NVGoggles_OPFOR";_stMan enableMimics false;
 sleep 1;

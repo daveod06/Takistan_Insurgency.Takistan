@@ -1,5 +1,16 @@
 call compile preprocessFileLineNumbers"map.sqf";
-setViewDistance(paramsArray select 6);setObjectViewDistance(paramsArray select 6);setTerrainGrid 50;setShadowDistance(paramsArray select 8);enableEnvironment[false,true];
+//setViewDistance(paramsArray select 6);setObjectViewDistance(paramsArray select 6);setTerrainGrid 50;setShadowDistance(paramsArray select 8);enableEnvironment[false,true];
+
+Param_Grass = 2;
+Param_ViewDistance = 10000;
+Param_ObjectViewDistance = 5000;
+Param_DetailBlend = 12;
+
+setTerrainGrid (Param_Grass*3.125);
+setViewDistance (Param_ViewDistance);
+setObjectViewDistance [Param_ObjectViewDistance,Param_ObjectViewDistance*0.05];
+setDetailMapBlendPars [Param_DetailBlend,Param_DetailBlend*2.5];
+
 enableSentences false;player disableConversation true;player setVariable["BIS_noCoreConversations",true];player setSpeaker"NoVoice";player enableMimics false;
 execVM"intro.sqf";
 if(paramsArray select 9==1)then{
@@ -22,8 +33,17 @@ sleep 3;
 execVM"common\client\CAS\initCAS.sqf";
 player addEventHandler["handleRating",{0}];
 sleep 1;
-if(paramsArray select 11==1)then{player enableStamina false;};
-if(paramsArray select 7==48)then{
-while{true}do{sleep 1;
-if(player distance getMarkerPos"ah1"<300)then{if(getTerrainGrid==50)exitWith{sleep 10;};if(getTerrainGrid<50)then{setTerrainGrid 50;};};
-if((getTerrainGrid==50)&&{(player distance getMarkerPos"ah1">300)})then{setTerrainGrid(paramsArray select 7);};sleep 10;};};
+// stamina stuff
+player setFatigue 0.0;
+player enableStamina false;
+
+0 = [] spawn
+{
+    while {alive player} do
+    {
+        player setFatigue 0.0;
+        player enableStamina false;
+        sleep 5.0;
+    };
+};
+

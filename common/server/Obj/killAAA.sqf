@@ -32,7 +32,7 @@ sleep 3;
 _random=(round(random 2)+1);
 for "_i" from 0 to _random do{
 _nObjPos=[_objvPos,random 200,200,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile >>"CfgGroups">>"East">>"SovietArmy_OKSVA">>"Infantry">>"SovietArmy_OKSVA__infantry_fire_team")]call BIS_fnc_spawnGroup;
 [_spawnGroup,_objvPos,500+random 1000]call BIS_fnc_taskPatrol;
 objMen=objMen+(units _spawnGroup);
 [_spawnGroup]call objSkill;
@@ -41,7 +41,7 @@ sleep 1;};
 
 [floor(random 4)]call objST;
 _nObjPos=[_objvPos,random 200,200,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile >>"CfgGroups">>"East">>"SovietArmy_OKSVA">>"Infantry">>"SovietArmy_OKSVA__infantry_fire_team")]call BIS_fnc_spawnGroup;
 [_spawnGroup,_objvPos]call BIS_fnc_taskDefend;
 [_spawnGroup]call objSkill;
 objMen=objMen+(units _spawnGroup);

@@ -15,7 +15,7 @@ _objvPos=[_objvPos,0,random 2750,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
 switch(true)do{
 case(common_server_Obj_killVehs_use_RHS_T72):{objTar=[_objvPos,SIDE_INS,configFile>>"CfgGroups">>"EAST">>"rhs_faction_tv">>"rhs_group_rus_tv_72">>"RHS_T72BAPlatoon"]call BIS_fnc_spawnGroup;}; // FIXME
 //case(isClass(configFile>>"cfgPatches">>"CUP_TrackedVehicles_Core")):{objTar=[_objvPos,SIDE_INS,(configFile>>"CfgGroups">>"EAST">>"CUP_O_TK">>"Armored">>"CUP_O_TK_T55Platoon")]call BIS_fnc_spawnGroup;};
-default{objTar=[_objvPos,SIDE_INS,(configFile>>"CfgGroups">>"EAST">>"OPF_F">>"Armored">>"OIA_TankPlatoon")]call BIS_fnc_spawnGroup;};};
+default{objTar=[_objvPos,SIDE_INS,(configfile>>"CfgGroups">>"Indep">>"LOP_AM">>"Armored">>"LOP_AM_T72_Platoon")]call BIS_fnc_spawnGroup;};};
 publicVariable "objTar";
 [objTar]call objSkill;
 {if(!isAbleToBreathe _x)then{clearItemCargoGlobal _x;_x lock 3;_x allowCrewInImmobile true;_x setFuel 0;}else{[_x]execVM "eos\fn\randOP4.sqf";_x allowFleeing 0;};}forEach units objTar;
@@ -24,7 +24,7 @@ sleep 3;
 _random=(round(random 1)+1);
 for "_i" from 0 to _random do{
 _nObjPos=[_objvPos,random 50,1000,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile >>"CfgGroups">>"East">>"SovietArmy_OKSVA">>"Infantry">>"SovietArmy_OKSVA__infantry_fire_team")]call BIS_fnc_spawnGroup;
 [_spawnGroup,_objvPos,500+random 1000]call BIS_fnc_taskPatrol;
 objMen=objMen+(units _spawnGroup);
 [_spawnGroup]call objSkill;
@@ -32,7 +32,7 @@ sleep 1;};
 
 [floor(random 2)]call objST;
 _nObjPos=[_objvPos,random 200,200,1,0,60*(pi/180),0,[]]call BIS_fnc_findSafePos;
-_spawnGroup=[_nObjPos,SIDE_INS,(configfile>>"CfgGroups">>"West">>"BLU_F">>"Infantry">>"BUS_InfTeam")]call BIS_fnc_spawnGroup;
+_spawnGroup=[_nObjPos,SIDE_INS,(configfile >>"CfgGroups">>"East">>"SovietArmy_OKSVA">>"Infantry">>"SovietArmy_OKSVA__infantry_fire_team")]call BIS_fnc_spawnGroup;
 [_spawnGroup,_objvPos]call BIS_fnc_taskDefend;
 [_spawnGroup]call objSkill;
 objMen=objMen+(units _spawnGroup);

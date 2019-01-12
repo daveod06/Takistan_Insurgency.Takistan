@@ -103,5 +103,14 @@ RydFFE_Add_Other = []; // here you can list classnames of other custom artillery
 //];
 [] spawn DJOAiArtillery_fnc_FFE_ArtilleryMaster;
 
+Param_Grass = 2;
+Param_ViewDistance = 10000;
+Param_ObjectViewDistance = 5000;
+Param_DetailBlend = 12;
+
+setTerrainGrid (Param_Grass*3.125);
+setViewDistance (Param_ViewDistance);
+setObjectViewDistance [Param_ObjectViewDistance,Param_ObjectViewDistance*0.05];
+setDetailMapBlendPars [Param_DetailBlend,Param_DetailBlend*2.5];
 
 if(!isDedicated)then{waitUntil{!isNull player && isPlayer player};};

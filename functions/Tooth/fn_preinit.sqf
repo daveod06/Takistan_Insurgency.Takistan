@@ -75,6 +75,6 @@ Tooth_strobeGear_helmets = ["H_HelmetB_light","H_HelmetB_light_black","H_HelmetB
 Tooth_medic_class_1 = "OKSVA_Medic_MSV";
 Tooth_medic_class_1 = "OKSVA_Medic_VDV";
 
-SIDE_INS = WEST;
+SIDE_INS = INDEPENDENT;
 SIDE_OCCUPIERS = EAST;
-SIDE_IND = INDEPENDENT;
+SIDE_IND = WEST;

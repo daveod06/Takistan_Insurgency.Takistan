@@ -22,9 +22,10 @@ if(_Hauss>0)then{if(round(random 3)==1)then{_unit playAction"SitDown";};};};
 
 if(side _unit==SIDE_IND)then{
 sleep 7.5;
-removeAllAssignedItems _unit;removeHeadgear _unit;_unit addHeadgear"H_HelmetO_ocamo";
+removeAllAssignedItems _unit;removeHeadgear _unit;_unit addHeadgear"LOP_H_SSh68Helmet_OLV";
 sleep 3;
-removeUniform _unit;_unit forceAddUniform"U_O_CombatUniform_ocamo";
+removeUniform _unit;_unit forceAddUniform"LOP_U_TKA_Fatigue_01";
+_unit addVest "LOP_6sh46";
 sleep 1;
 [_unit]call InsAI;
 sleep 1;
