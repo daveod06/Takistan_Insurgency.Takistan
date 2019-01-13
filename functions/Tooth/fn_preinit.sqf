@@ -67,7 +67,7 @@ Tooth_OPFOR_CAS_pilot = "OKSVA_Pilot_VVS";
 Tooth_OPFOR_CAS_pilot_default = "O_Pilot_F";
 Tooth_OPFOR_CAS_drone = "O_UAV_02_CAS_F";
 
-Tooth_marker_color_OPFOR = "ColorOPFOR";
+Tooth_marker_color_OPFOR = "ColorOpfor";
 Tooth_marker_type_plane_OPFOR = "o_plane";
 
 Tooth_jump_helmet_type = "345th_jump_helmet"; // "H_CrewHelmetHeli_B"
