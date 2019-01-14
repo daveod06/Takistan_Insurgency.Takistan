@@ -74,4 +74,4 @@ createVehicle["Crater",(getPosATL _iedObj),[],0,"can_collide"];
 	};
 }forEach iedMkr;
 sleep 5;
-{CIVILIAN revealMine _x;SIDE_INS revealMine _x;}forEach allMines;
+{SIDE_CIV revealMine _x;SIDE_INS revealMine _x;}forEach allMines;

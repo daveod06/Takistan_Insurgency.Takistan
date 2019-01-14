@@ -68,7 +68,7 @@ sleep 3;
 if(isServer)then{
 _units=[];
 while{(true)}do{
-{if((_x isKindOf "SoldierEB")||(_x isKindOf "SoldierGB"))then{
+{if((_x isKindOf SIDE_INS_SOLDIER_CLASS)||(_x isKindOf SIDE_IND_SOLDIER_CLASS))then{
 _uls=lifeState _x;
 	if((_uls!="INCAPACITATED")&&
 	!(_x getVariable["dam_ready",false]))then{

@@ -19,10 +19,10 @@ pray={private _civ=_this select 0;
 ctpAudio={
 private _ctpSFX=createVehicle["Land_ClutterCutter_small_F",[getPosATL(_this select 0)select 0,getPosATL(_this select 0)select 1,(getPosATL(_this select 0)select 2)+5],[],0,""];
 [_ctpSFX,["adhan",1000,1]]remoteExec["say3D",0,true];
-private _prayers=_ctpSFX nearEntities["Civilian",200];
+private _prayers=_ctpSFX nearEntities[SIDE_CIV_SOLDIER_CLASS,200];
 {
 	if(_x isKindOf"C_Man_1")then{
-	if(isPlayer _x || side _x!=CIVILIAN)exitWith{};
+	if(isPlayer _x || side _x!=SIDE_CIV)exitWith{};
 	private _civ=_x;
 	if(count waypoints _civ>0)then{{deleteWaypoint((waypoints _civ)select 0);}forEach waypoints _civ;};doStop _civ;
 	sleep .5;

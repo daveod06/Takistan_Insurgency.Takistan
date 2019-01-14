@@ -276,7 +276,7 @@ _isMoving=_x select 4;
 _nextActionTime=_x select 5;
 _isRunning=_x select 6;
 
-//If civilian has reached its destination
+//If SIDE_CIV has reached its destination
 if(_isMoving&&_lastPos distance getPos _unit<1)then{
 _isMoving=false;
 _nextActionTime=time+random civs_MAXWAITINGTIME;
@@ -284,7 +284,7 @@ _x set[4,_isMoving];//Set isMoving=false
 _x set[5,_nextActionTime];//Next action time
 (group _unit) setFormDir random 360;};
 
-//If it is time for civilian to move
+//If it is time for SIDE_CIV to move
 if(!_isMoving&&time > _nextActionTime)then{
 _destPos=[_unit,_blackListMarkers,_maxSpawnDistance]call civs_FindDestinationPosition;
 	if(count _destPos>0)then{

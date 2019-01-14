@@ -1,5 +1,5 @@
 private _PLR=_this;
-if(side _PLR==CIVILIAN)exitWith{{_x enableChannel false}count[(ch6+5),(ch7+5),(ch8+5)];{_x radioChannelRemove[_PLR];}forEach[ch6,ch7,ch8];};
+if(side _PLR==SIDE_CIV)exitWith{{_x enableChannel false}count[(ch6+5),(ch7+5),(ch8+5)];{_x radioChannelRemove[_PLR];}forEach[ch6,ch7,ch8];};
 if("ItemRadio"in assignedItems _PLR&&_PLR getUnitTrait"RTO")exitWith{
 switch(side _PLR)do{
 case SIDE_OCCUPIERS:{ch6 radioChannelAdd[_PLR];(ch6+5)enableChannel r_sCH;};

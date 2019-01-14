@@ -2,7 +2,7 @@ private["_parameters"];
 switch(true)do{
 case(isLOPTak):{
 _parameters=[
-["SIDE",civilian],
+["SIDE",SIDE_CIV],
 ["VEHICLES",
     [
     "C_Truck_02_box_F",
@@ -31,7 +31,7 @@ _parameters=[
 ["DEBUG",false]];};
 default{
 _parameters=[
-["SIDE",civilian],
+["SIDE",SIDE_CIV],
 ["VEHICLES",["C_Offroad_01_F","C_Offroad_01_repair_F","C_Quadbike_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","C_SUV_01_F","C_Van_01_transport_F","C_Van_01_box_F","C_Van_01_fuel_F","C_Van_02_transport_F","C_Van_02_service_F","C_Van_02_vehicle_F","I_C_Van_02_transport_F","I_C_Van_02_vehicle_F"]],
 ["VEHICLES_COUNT",6],
 ["MIN_SPAWN_DISTANCE",1000],

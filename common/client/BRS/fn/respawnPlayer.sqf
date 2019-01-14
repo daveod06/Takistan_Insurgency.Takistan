@@ -6,7 +6,7 @@ if(!isNil("BRS_currentSpawn"))then{
 	_limitEnemy=player getVariable "AAlimitEnemy";}else{
 	_spawnSide=player getVariable "EVSpawnSide";
 	_limitEnemy=player getVariable "EVlimitEnemy";};
-if({(_x distance BRS_currentSpawn<_limitEnemy)and(if(side _x!=CIVILIAN)THEN{
+if({(_x distance BRS_currentSpawn<_limitEnemy)and(if(side _x!=SIDE_CIV)THEN{
 side _x!=_spawnSide;})}count allUnits>0)then{
 _display=uiNamespace getVariable "BRS_RespawnDialog";
 (_display displayCtrl 51500)ctrlSetText"  ENEMIES NEARBY!";}else{

@@ -9,7 +9,7 @@ private _haltTxt=str selectRandom[
 "<t size='2' shadow='2'>Freeze!</t>",
 "<t size='2' shadow='2'>Stop moving!</t>"];
 titleText[_haltTxt,"PLAIN DOWN",-1,true,true];titleFadeOut 3;
-if(!(side _civ isEqualTo CIVILIAN))exitWith{_civ remoteExec["removeAllActions",0,true];};
+if(!(side _civ isEqualTo SIDE_CIV))exitWith{_civ remoteExec["removeAllActions",0,true];};
 [_civ,"PATH"]remoteExec["disableAI",0];};
 
 
@@ -24,7 +24,7 @@ private _goAwayTxt=str selectRandom[
 "<t size='2' shadow='2'>Get the fuck out of the way!</t>"];
 player playAction"HandSignalPoint";
 titleText[_goAwayTxt,"PLAIN DOWN",-1,true,true];titleFadeOut 3;
-if(!(side _civ isEqualTo CIVILIAN))exitWith{_civ remoteExec["removeAllActions",0,true];};
+if(!(side _civ isEqualTo SIDE_CIV))exitWith{_civ remoteExec["removeAllActions",0,true];};
 _nH=nearestObjects[_civ,civ_Homes,150];
 if(count _nH==0)exitWith{};
 private["_H"];
@@ -41,7 +41,7 @@ private _getDownTxt=str selectRandom[
 "<t size='2' shadow='2'>Get on the ground!</t>",
 "<t size='2' shadow='2'>Get down on the ground!</t>"];
 titleText[_getDownTxt,"PLAIN DOWN",-1,true,true];titleFadeOut 3;
-if(!(side _civ isEqualTo CIVILIAN))exitWith{_civ remoteExec["removeAllActions",0,true];};
+if(!(side _civ isEqualTo SIDE_CIV))exitWith{_civ remoteExec["removeAllActions",0,true];};
 [_civ,"DOWN"]remoteExec["setUnitPos",0];[_civ,"ApanPpneMstpSnonWnonDnon_G01"]remoteExec["playMoveNow",0];};
 
 
@@ -52,7 +52,7 @@ _getUpTxt=str selectRandom[
 "<t size='2' shadow='2'>Stand up!</t>",
 "<t size='2' shadow='2'>On your feet!</t>"];
 titleText[_getUpTxt,"PLAIN DOWN",-1,true,true];titleFadeOut 3;
-if(!(side _civ isEqualTo CIVILIAN))exitWith{_civ remoteExec["removeAllActions",0,true];};
+if(!(side _civ isEqualTo SIDE_CIV))exitWith{_civ remoteExec["removeAllActions",0,true];};
 if(unitPos _civ!="UP")then{[_civ,"UP"]remoteExec["setUnitPos",0];[_civ,"AmovPpneMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon"]remoteExec["switchMove",0];};};
 
 
@@ -63,7 +63,7 @@ private _civ=_this select 0;
 if(cursorTarget!=_civ)exitWith{};
 if(isNull _civ || !alive _civ)exitWith{_civ remoteExec["removeAllActions",0,true];titleText["He's dead...","PLAIN DOWN"];titleFadeOut 5;};
 if(player distance _civ>5)exitWith{titleText["He's too far away...","PLAIN DOWN"];titleFadeOut 5;};
-if(!(side _civ isEqualTo CIVILIAN))exitWith{_civ remoteExec["removeAllActions",0,true];};
+if(!(side _civ isEqualTo SIDE_CIV))exitWith{_civ remoteExec["removeAllActions",0,true];};
 
 private _myTrait=player getUnitTrait"UavHacker";
 private _hello=str selectRandom["<t size='2' shadow='2'>Hello!</t>",
@@ -119,8 +119,8 @@ sleep 1;
 _civ setRandomLip true;
 	//Random intel given
 	if(round(random 4)==1)then{
-		private _nearBads1=_civ nearEntities["SoldierEB",350];
-		private _nearBads2=_civ nearEntities["SoldierGB",350];
+		private _nearBads1=_civ nearEntities[SIDE_INS_SOLDIER_CLASS,350];
+		private _nearBads2=_civ nearEntities[SIDE_IND_SOLDIER_CLASS,350];
 		if(count _nearBads1>0)then{
 		titleText["<t size='5' shadow='2'>(Acquiring Intel)</t>","PLAIN DOWN",-1,true,true];
 		[_civ,"Acts_PointingLeftUnarmed"]remoteExec["switchMove",0];

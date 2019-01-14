@@ -18,7 +18,7 @@ if(isClass(configFile>>"cfgPatches">>"rhsusf_vehicles"))then{isRHSUS=true;}else{
 call compile preprocessFileLineNumbers"common\server\civ\traffic.sqf";
 call compile preprocessFileLineNumbers"common\server\civ\dbugT.sqf";
 call compile preprocessFileLineNumbers"common\server\civ\dbugC.sqf";
-civs_SIDE=civilian;
+civs_SIDE=SIDE_CIV;
 civs_MINSKILL=0;
 civs_MAXSKILL=0;
 civs_MAXWAITINGTIME=300;

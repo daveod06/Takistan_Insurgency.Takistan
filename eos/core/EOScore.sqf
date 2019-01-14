@@ -16,7 +16,7 @@ _cache=if(count _this>6)then{_this select 6}else{false};
 if(_side==SIDE_INS)then{_enemySide="EAST";_civZone=false;};
 if(_side==SIDE_OCCUPIERS)then{_enemySide="GUER";_civZone=false;};
 if(_side==SIDE_IND)then{_enemySide="EAST";_civZone=false;};
-if(_side==CIVILIAN)then{_enemySide="civ";_civZone=true;};
+if(_side==SIDE_CIV)then{_enemySide="civ";_civZone=true;};
 if(_mA==0)then{_mAH=1;_mAN=0.5;};
 if(_mA==1)then{_mAH=0;_mAN=0;};
 if(_mA==2)then{_mAH=0.5;_mAN=0.5;};

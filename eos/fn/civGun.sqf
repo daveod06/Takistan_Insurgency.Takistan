@@ -24,7 +24,7 @@ _skills=[.3,.5,.8,1,.7,1,.8,1,1];
 
 while{alive _unit}do{
 _civPos=getPos _unit;
-_nearCiv=nearestObjects[_civPos,["SoldierWB"],9];
+_nearCiv=nearestObjects[_civPos,[SIDE_OCCUPIERS_SOLDIER_CLASS],9];
 	{if((isPlayer _x)&&{(alive _x)})then{_nearCivLive set[(count _nearCivLive),_x];};}forEach _nearCiv;
 	if(count _nearCivLive>0)then{_victim=selectRandom _nearCivLive;
 	if(typeName _victim=="OBJECT")then{

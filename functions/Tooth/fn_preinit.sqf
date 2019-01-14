@@ -73,8 +73,14 @@ Tooth_marker_type_plane_OPFOR = "o_plane";
 Tooth_jump_helmet_type = "345th_jump_helmet"; // "H_CrewHelmetHeli_B"
 Tooth_strobeGear_helmets = ["H_HelmetB_light","H_HelmetB_light_black","H_HelmetB_light_desert","H_HelmetB_light_grass","H_HelmetB_light_sand","H_HelmetB_light_snakeskin"];
 Tooth_medic_class_1 = "OKSVA_Medic_MSV";
-Tooth_medic_class_1 = "OKSVA_Medic_VDV";
+Tooth_medic_class_2 = "OKSVA_Medic_VDV";
 
 SIDE_INS = INDEPENDENT;
 SIDE_OCCUPIERS = EAST;
 SIDE_IND = WEST;
+SIDE_CIV = CIVILIAN;
+
+SIDE_OCCUPIERS_SOLDIER_CLASS = "SoldierWB";
+SIDE_INS_SOLDIER_CLASS = "SoldierEB";
+SIDE_IND_SOLDIER_CLASS = "SoldierGB";
+SIDE_CIV_SOLDIER_CLASS = "Civilian";

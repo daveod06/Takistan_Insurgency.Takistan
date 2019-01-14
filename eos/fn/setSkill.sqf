@@ -6,7 +6,7 @@ if(EOSdmg>1)then{_unit removeAllEventHandlers"HandleDamage";_unit addEventHandle
 [_unit]execVM"eos\fn\randOP4.sqf";
 switch(side _unit)do{
 case SIDE_INS:{if(random 1<.05)then{_unit addEventHandler["killed","null=[_this]execVM ""core\modules\cacheScript\iDrop.sqf"""];};};
-case civilian:{if(random 1<.03)then{null=[_unit]execVM"eos\fn\jihad.sqf";}else{if(random 1<.1)then{null=[_unit]execVM"eos\fn\civGun.sqf";}else{
+case SIDE_CIV:{if(random 1<.03)then{null=[_unit]execVM"eos\fn\jihad.sqf";}else{if(random 1<.1)then{null=[_unit]execVM"eos\fn\civGun.sqf";}else{
 [_unit,["Get down!",{call civ_getDown}]]remoteExec["addAction",0];
 [_unit,["Get up!",{call civ_getUp}]]remoteExec["addAction",0];
 [_unit,["Halt!",{call civ_halt}]]remoteExec["addAction",0];

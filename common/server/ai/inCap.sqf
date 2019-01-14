@@ -22,19 +22,19 @@ _unit setVariable["doomed",0,false];};};//if unit got healed then reset variable
 
 _arr=[];
 _unitDir=getDir _unit;
-_nearestUnits=_unit nearEntities[["SoldierEB","SoldierGB"],50];
+_nearestUnits=_unit nearEntities[[SIDE_INS_SOLDIER_CLASS,SIDE_IND_SOLDIER_CLASS],50];
 _dragger=selectRandom(_nearestUnits-(playableUnits+switchableUnits+[_unit]));
 //Find dragger loop
 while{true}do{
-_nearestUnits=_unit nearEntities[["SoldierEB","SoldierGB"],50];
+_nearestUnits=_unit nearEntities[[SIDE_INS_SOLDIER_CLASS,SIDE_IND_SOLDIER_CLASS],50];
 if(count _nearestUnits<2)exitWith{_unit setDamage 1;};
 _dragger=selectRandom(_nearestUnits-(playableUnits+switchableUnits+[_unit]));
 sleep 1;
-if((alive _unit)&&((side _dragger)!=civilian)&&((lifeState _dragger)!="INCAPACITATED")&&(alive _dragger)&&((AnimationState _dragger)!="AcinPknlMwlkSrasWrflDb"))exitWith{};//#_dragger
+if((alive _unit)&&((side _dragger)!=SIDE_CIV)&&((lifeState _dragger)!="INCAPACITATED")&&(alive _dragger)&&((AnimationState _dragger)!="AcinPknlMwlkSrasWrflDb"))exitWith{};//#_dragger
 if(!alive _unit)exitWith{};};
 if(!alive _unit)exitWith{};
 _hls=lifeState _dragger;
-if((alive _unit)&&(side _dragger!=civilian)&&(!isPlayer _dragger)&&(_dragger!=_unit)&&(_hls!="INCAPACITATED")&&(alive _dragger)&&((AnimationState _dragger)!="AcinPknlMwlkSrasWrflDb"))then{
+if((alive _unit)&&(side _dragger!=SIDE_CIV)&&(!isPlayer _dragger)&&(_dragger!=_unit)&&(_hls!="INCAPACITATED")&&(alive _dragger)&&((AnimationState _dragger)!="AcinPknlMwlkSrasWrflDb"))then{
 [_dragger]joinSilent grpNull;
 _dragger removeAllMPEventHandlers "MPHit";
 _dragger setUnitPos "MIDDLE";
@@ -56,7 +56,7 @@ _unit setDir 180;
 _DummyClone={
 private["_dummy","_dummygrp","_dragger"];
 _dragger=_this;
-_dummygrp=createGroup civilian;
+_dummygrp=createGroup SIDE_CIV;
 _dummy=_dummygrp createUnit["C_man_polo_1_F",Position _dragger,[],0,"FORM"];
 _dummy setUnitPos "up";
 _dummy hideObjectGlobal true;

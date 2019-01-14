@@ -79,7 +79,7 @@ if(_faction==2) then
     _heliCrew=["LOP_TKA_Infantry_Pilot"];
 };
 if(_faction==3) then
-{//CIVILIAN
+{//SIDE_CIV
     _InfPool=["LOP_Tak_Civ_Man_01",
 "LOP_Tak_Civ_Man_02",
 "LOP_Tak_Civ_Man_04",

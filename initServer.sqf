@@ -30,8 +30,8 @@ case 0:{0 setFog 0.05};case 2:{0 setFog 0.1};case 3:{0 setFog 0.15};case 4:{0 se
 _rFog1=switch(round(random 6))do{
 case 0:{5400 setFog 0.05};case 2:{5400 setFog 0.1};case 3:{5400 setFog 0.15};case 4:{5400 setFog 0.2};case 5:{5400 setFog 0.25};case 6:{5400 setFog 0.3};case 7:{5400 setFog 0.35};};
 0 setWindDir(random 359);5400 setGusts 0.35;5400 setWindForce 0.35;5400 setWindStr 0.35;5400 setWindDir(random 359);
-civilian setFriend[SIDE_OCCUPIERS,1];civilian setFriend[SIDE_INS,1];civilian setFriend[SIDE_IND,1];civilian setFriend[SIDE_IND,1];
-SIDE_OCCUPIERS setFriend[civilian,1];SIDE_INS setFriend[civilian,1];SIDE_IND setFriend[civilian,1];SIDE_IND setFriend[civilian,1];
+SIDE_CIV setFriend[SIDE_OCCUPIERS,1];SIDE_CIV setFriend[SIDE_INS,1];SIDE_CIV setFriend[SIDE_IND,1];SIDE_CIV setFriend[SIDE_IND,1];
+SIDE_OCCUPIERS setFriend[SIDE_CIV,1];SIDE_INS setFriend[SIDE_CIV,1];SIDE_IND setFriend[SIDE_CIV,1];SIDE_IND setFriend[SIDE_CIV,1];
 _minarets=nearestObjects[server,["Land_A_Minaret_EP1","Land_A_Minaret_Porto_EP1","Land_R_Minaret","Land_A_Mosque_big_minaret_1_EP1","Land_A_Mosque_big_minaret_2_EP1"],8000];
 _mosques=nearestObjects[server,["Land_A_Mosque_big_hq_EP1","Land_A_Mosque_small_1_EP1","Land_A_Mosque_small_2_EP1"],8000];
 {if(alive _x)then{_x addMPEventHandler["MPKilled",{if(side(_this select 1)==SIDE_OCCUPIERS)then{systemChat format["%1 destroyed a religious structure!  (Minaret)",name(_this select 1)];(_this select 0)removeMPEventHandler["MPKilled",0];};}];};}forEach _minarets;

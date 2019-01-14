@@ -110,7 +110,7 @@ private["_roadSegmentDirection","_testDirection","_facingAway","_posX","_posY","
 private["_fnc_OnSpawnVehicle","_fnc_OnRemoveVehicle","_fnc_FindSpawnSegment"];
 private["_debugMarkerName"];
 
-_side=[_this,"SIDE",civilian]call civTraffic_GetParamValue;
+_side=[_this,"SIDE",SIDE_CIV]call civTraffic_GetParamValue;
 _carList=[];
 switch(true)do{
 case(isLOPTak):{_carList=[
@@ -373,7 +373,7 @@ _side=side _group;
 _debugMarkerColor="Default";
 if(_side==SIDE_OCCUPIERS)then{_debugMarkerColor="ColorBlue";};
 if(_side==SIDE_INS)then{_debugMarkerColor="ColorRed";};
-if(_side==civilian)then{_debugMarkerColor="ColorYellow";};
+if(_side==SIDE_CIV)then{_debugMarkerColor="ColorYellow";};
 if(_side==SIDE_IND)then{_debugMarkerColor="ColorGreen";};
 [_debugMarkerName,getPos(_car),"mil_dot",_debugMarkerColor,"Traffic"]call civTraffic_SetDebugMarkerAllClients;}forEach _activecarsAndGroup;
 sleep 1;};}else{sleep _sleepSeconds;};};};

@@ -107,7 +107,7 @@ if(!(isNil "_randPos")&& _randPos distance player>tpw_animal_minRadius)then{
 //Spawn flock
 for "_i" from 1 to _flock do{
 sleep random 3;
-_herd=createGroup civilian;
+_herd=createGroup SIDE_CIV;
 _animal=_herd createUnit[_type,_randPos,[],3,""];
 //_animal setVariable["BIS_fnc_animalBehaviour_disable",true];_animal disableAI "FSM";
 _animal allowFleeing 0;

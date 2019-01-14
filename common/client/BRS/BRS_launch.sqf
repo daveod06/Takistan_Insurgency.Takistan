@@ -18,7 +18,7 @@ if(_dbug)then{_evType="fired";}else{_evType="killed";};
 
 //IF NO SIDE SET THEN SET DEFAULT PARAMETERS
 if(isNil("_spawnSide"))then{
-_spawnSide=CIVILIAN;
+_spawnSide=SIDE_CIV;
 //ADDACTION
 	if(_addAction)then{
 	player setVariable["AAcustomRP",_customRP];
