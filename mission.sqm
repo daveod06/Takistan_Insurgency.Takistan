@@ -32306,10 +32306,11 @@ class Mission
 						rank="LIEUTENANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P22";
+                        description="Pilot";
 						isPlayable=1;
 					};
 					id=5102;
-					type="OKSVA_Helicopter_Pilot_armored_FA";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32386,10 +32387,11 @@ class Mission
 						rank="LIEUTENANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P21";
+                        description="Pilot";
 						isPlayable=1;
 					};
 					id=5103;
-					type="OKSVA_Helicopter_Pilot_armored_FA";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34437,7 +34439,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=5105;
-					type="OKSVA_Officer_SPETSNAZ";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34514,10 +34516,11 @@ class Mission
 						rank="LIEUTENANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P4";
+                        description="Medic";
 						isPlayable=1;
 					};
 					id=5106;
-					type="OKSVA_Medic_SPETSNAZ";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34613,10 +34616,11 @@ class Mission
 						rank="CORPORAL";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P1";
+                        description="Rifleman";
 						isPlayable=1;
 					};
 					id=5117;
-					type="OKSVA_Rifleman_SPETSNAZ";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34712,10 +34716,11 @@ class Mission
 						rank="CORPORAL";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P2";
+                        description="Machine Gunner";
 						isPlayable=1;
 					};
 					id=5108;
-					type="OKSVA_Machine_Gunner_SPETSNAZ";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34792,10 +34797,11 @@ class Mission
 						rank="SERGEANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P3";
+                        description="Machine Gunner Assistant";
 						isPlayable=1;
 					};
 					id=5109;
-					type="OKSVA_Machine_Gunner_Assistant_SPETSNAZ";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34913,7 +34919,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=5080;
-					type="OKSVA_Medic_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34991,10 +34997,11 @@ class Mission
 						rank="SERGEANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P23";
+                        description="Engineer";
 						isPlayable=1;
 					};
 					id=5081;
-					type="OKSVA_Engineer_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35071,10 +35078,11 @@ class Mission
 					{
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P24";
+                        description="Grenadier";
 						isPlayable=1;
 					};
 					id=5082;
-					type="OKSVA_Grenadier_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35151,10 +35159,11 @@ class Mission
 					{
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P25";
+                        description="Rifleman";
 						isPlayable=1;
 					};
 					id=5083;
-					type="OKSVA_Grenadier_Assistant_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35231,10 +35240,11 @@ class Mission
 					{
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P26";
+                        description="Marksman";
 						isPlayable=1;
 					};
 					id=5084;
-					type="OKSVA_Marksman_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35351,7 +35361,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=5086;
-					type="OKSVA_Medic_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35428,10 +35438,11 @@ class Mission
 						rank="SERGEANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P11";
+                        description="Engineer";
 						isPlayable=1;
 					};
 					id=5087;
-					type="OKSVA_Engineer_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35507,10 +35518,11 @@ class Mission
 					{
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P12";
+                        description="Machine Gunner";
 						isPlayable=1;
 					};
 					id=5090;
-					type="OKSVA_Machine_Gunner_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35586,10 +35598,11 @@ class Mission
 					{
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P13";
+                        description="Machine Gunner Assistant";
 						isPlayable=1;
 					};
 					id=5091;
-					type="OKSVA_Machine_Gunner_Assistant_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35665,9 +35678,10 @@ class Mission
 					{
 						name="P15";
 						isPlayable=1;
+                        description="Rifleman";
 					};
 					id=5093;
-					type="OKSVA_Rifleman_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35784,7 +35798,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=5096;
-					type="OKSVA_Medic_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35923,7 +35937,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=5097;
-					type="OKSVA_Engineer_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36002,7 +36016,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=5098;
-					type="OKSVA_Grenadier_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36100,7 +36114,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=5099;
-					type="OKSVA_Grenadier_Assistant_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37499,7 +37513,7 @@ class Mission
 						name="bm21_0G";
 					};
 					id=5721;
-					type="OKSVA_Rifleman_MSV";
+					type="OKSVA_Crew_MSV";
 				};
 			};
 			class Attributes
@@ -37669,7 +37683,7 @@ class Mission
 						name="bm21_0G_1";
 					};
 					id=5724;
-					type="OKSVA_Rifleman_MSV";
+					type="OKSVA_Crew_MSV";
 					atlOffset=-0.27246094;
 				};
 			};
@@ -37842,7 +37856,7 @@ class Mission
 						name="bm21_0G_2";
 					};
 					id=5727;
-					type="OKSVA_Rifleman_MSV";
+					type="OKSVA_Crew_MSV";
 					atlOffset=-0.22137451;
 				};
 			};
@@ -38622,7 +38636,7 @@ class Mission
 						name="mortar_3g";
 					};
 					id=5767;
-					type="OKSVA_Rifleman_MSV";
+					type="OKSVA_Gunner_MSV";
 					atlOffset=-0.10870361;
 					class CustomAttributes
 					{
@@ -38823,7 +38837,7 @@ class Mission
 						isPlayer=1;
 					};
 					id=5776;
-					type="OKSVA_Rifleman_MSV";
+					type="OKSVA_Gunner_MSV";
 				};
 			};
 			class Attributes
