@@ -197,3 +197,239 @@ this setFace "PersianHead_A3_02";
 this setSpeaker "male01per";
 this setSpeaker "male02per";
 this setSpeaker "male03per";
+
+
+
+// AK-74 Rifleman
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "m88_vdv_khaki_afghanka";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 5 do {this addItemToUniform "rhs_mag_rgd5";};
+for "_i" from 1 to 2 do {this addItemToUniform "rhs_30Rnd_545x39_7N6_AK";};
+this addVest "rhs_vydra_3m";
+for "_i" from 1 to 8 do {this addItemToVest "rhs_30Rnd_545x39_7N6_AK";};
+this addBackpack "rhs_sidor";
+this addHeadgear "345th_Jump_Helmet";
+this addGoggles "G_Aviator";
+
+this addWeapon "rhs_weap_aks74";
+this addPrimaryWeaponItem "rhs_acc_dtk1983";
+this addWeapon "Binocular";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+
+
+
+
+
+
+// Autofileman
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "m88_vdv_khaki_afghanka";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 5 do {this addItemToUniform "rhs_mag_rgd5";};
+this addVest "rhs_vydra_3m";
+for "_i" from 1 to 3 do {this addItemToVest "hlc_60Rnd_545x39_t_rpk";};
+this addBackpack "rhs_sidor";
+for "_i" from 1 to 3 do {this addItemToBackpack "hlc_60Rnd_545x39_t_rpk";};
+this addHeadgear "345th_Jump_Helmet";
+this addGoggles "G_Aviator";
+
+this addWeapon "hlc_rifle_rpk74n";
+this addPrimaryWeaponItem "rhs_acc_dtk1983";
+this addWeapon "Binocular";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+
+
+
+
+// PKM
+comment "Exported from Arsenal by SaberSnack";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "m88_vdv_khaki_afghanka";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 5 do {this addItemToUniform "rhs_mag_rgd5";};
+for "_i" from 1 to 4 do {this addItemToUniform "rhs_mag_9x18_8_57N181S";};
+this addVest "rhs_vydra_3m";
+this addItemToVest "rhs_100Rnd_762x54mmR_green";
+this addBackpack "rhs_sidor";
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_100Rnd_762x54mmR_green";};
+this addHeadgear "345th_Jump_Helmet";
+this addGoggles "G_Aviator";
+
+this addWeapon "rhs_weap_pkm";
+this addWeapon "rhs_weap_makarov_pm";
+this addWeapon "Binocular";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+
+
+
+
+// Sniper
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "m88_vdv_khaki_afghanka";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 5 do {this addItemToUniform "rhs_mag_rgd5";};
+for "_i" from 1 to 4 do {this addItemToUniform "rhs_mag_9x18_8_57N181S";};
+this addVest "rhs_vydra_3m";
+for "_i" from 1 to 15 do {this addItemToVest "rhs_10Rnd_762x54mmR_7N1";};
+this addHeadgear "345th_Jump_Helmet";
+this addGoggles "G_Aviator";
+
+this addWeapon "40th_weap_svd_wood";
+this addPrimaryWeaponItem "rhs_acc_pso1m2";
+this addWeapon "rhs_weap_makarov_pm";
+this addWeapon "Binocular";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+
+
+
+
+// RPG-7
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "m88_vdv_khaki_afghanka";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 5 do {this addItemToUniform "rhs_mag_rgd5";};
+for "_i" from 1 to 4 do {this addItemToUniform "rhs_mag_9x18_8_57N181S";};
+this addVest "rhs_vydra_3m";
+this addBackpack "rhs_rpg_empty";
+for "_i" from 1 to 4 do {this addItemToBackpack "rhs_rpg7_PG7V_mag";};
+this addHeadgear "345th_Jump_Helmet";
+this addGoggles "G_Aviator";
+
+this addWeapon "rhs_weap_rpg7";
+this addWeapon "rhs_weap_makarov_pm";
+this addWeapon "Binocular";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+
+
+
+
+// Mosin
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "m88_vdv_khaki_afghanka";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 5 do {this addItemToUniform "rhs_mag_rgd5";};
+for "_i" from 1 to 4 do {this addItemToUniform "rhs_mag_9x18_8_57N181S";};
+this addVest "rhs_vydra_3m";
+this addItemToVest "rhs_rpg26_mag";
+for "_i" from 1 to 23 do {this addItemToVest "rhsgref_5Rnd_762x54_m38";};
+this addHeadgear "345th_Jump_Helmet";
+this addGoggles "G_Aviator";
+
+this addWeapon "rhs_weap_m38_rail";
+this addPrimaryWeaponItem "rhs_acc_dh520x56";
+this addWeapon "rhs_weap_rpg26";
+this addWeapon "rhs_weap_makarov_pm";
+this addWeapon "Binocular";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+
+
+
+
+// Medic
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "m88_vdv_khaki_afghanka";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 5 do {this addItemToUniform "rhs_mag_rgd5";};
+this addItemToUniform "rhs_30Rnd_545x39_7N6_AK";
+this addVest "rhs_vydra_3m";
+for "_i" from 1 to 8 do {this addItemToVest "rhs_30Rnd_545x39_7N6_AK";};
+this addBackpack "rhs_medic_bag";
+this addItemToBackpack "Medikit";
+for "_i" from 1 to 2 do {this addItemToBackpack "FirstAidKit";};
+this addHeadgear "345th_Jump_Helmet";
+this addGoggles "G_Aviator";
+
+this addWeapon "rhs_weap_aks74";
+this addPrimaryWeaponItem "rhs_acc_dtk1983";
+this addWeapon "Binocular";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";

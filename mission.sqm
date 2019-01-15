@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15;
+		nextID=24;
 	};
 	class Camera
 	{
-		pos[]={8371.1904,446.0162,1957.2401};
-		dir[]={-0.47741106,-0.72017002,0.50366026};
-		up[]={-0.49545261,0.69374377,0.52269137};
-		aside[]={0.72584057,2.0204461e-006,0.68801111};
+		pos[]={8380.3408,464.96194,1934.0841};
+		dir[]={-0.77835882,-0.52326226,0.34726766};
+		up[]={-0.47793391,0.8520987,0.21322992};
+		aside[]={0.40748453,1.7797574e-006,0.91332388};
 	};
 };
 binarizationWanted=0;
@@ -86,8 +86,8 @@ addons[]=
 	"Soviet_Army_OKSVA",
 	"A3_Soft_F_Gamma_Truck_02",
 	"po_factions_fic",
-	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F",
+	"A3_Modules_F_Curator_Curator",
 	"A3_Structures_F_Mil_Flags",
 	"Soviet_Gear",
 	"A3_Structures_F_Mil_Shelters",
@@ -273,15 +273,15 @@ class AddonsMetaData
 		};
 		class Item29
 		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item30
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -31828,10 +31828,11 @@ class Mission
 						rank="LIEUTENANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P18";
+						description="Team Leader";
 						isPlayable=1;
 					};
 					id=5077;
-					type="OKSVA_Junior_Officer_VDV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31908,10 +31909,11 @@ class Mission
 						rank="SERGEANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P20";
+						description="Medic";
 						isPlayable=1;
 					};
 					id=5078;
-					type="OKSVA_Senior_Technician_VDV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31988,10 +31990,11 @@ class Mission
 						rank="SERGEANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P19";
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=5076;
-					type="OKSVA_Medic_VDV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32067,16 +32070,17 @@ class Mission
 					{
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P17";
+						description="Grenadier";
 						isPlayable=1;
 					};
 					id=5075;
-					type="OKSVA_Grenadier_Assistant_VDV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -32085,10 +32089,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -32132,8 +32136,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -32142,10 +32146,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -32163,18 +32167,20 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						skill=0.58487302;
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P16";
+						description="Autorifleman";
 						isPlayable=1;
 					};
 					id=5074;
-					type="OKSVA_Grenadier_VDV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -32183,10 +32189,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -32230,8 +32236,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -32240,10 +32246,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -32291,12 +32297,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8206.3154,296.04144,2048.9263};
+						position[]={8206.3154,296.04144,2048.926};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						rank="LIEUTENANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P22";
 						isPlayable=1;
@@ -32370,12 +32377,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8206.374,296.04144,2046.2083};
+						position[]={8206.374,296.04144,2046.208};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
+						rank="LIEUTENANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P21";
 						isPlayable=1;
@@ -34416,7 +34424,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8275.8379,296.04144,2111.8008};
+						position[]={8275.8379,296.04144,2111.801};
 					};
 					side="East";
 					flags=7;
@@ -34425,6 +34433,7 @@ class Mission
 						rank="CAPTAIN";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P5";
+						description="Team Leader";
 						isPlayable=1;
 					};
 					id=5105;
@@ -34513,8 +34522,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -34523,10 +34532,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -34570,8 +34579,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -34580,10 +34589,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -34612,8 +34621,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -34622,10 +34631,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -34669,8 +34678,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -34679,10 +34688,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -34900,6 +34909,7 @@ class Mission
 						rank="SERGEANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P27";
+						description="Team Leader";
 						isPlayable=1;
 					};
 					id=5080;
@@ -35337,6 +35347,7 @@ class Mission
 						rank="SERGEANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P14";
+						description="Team Leader";
 						isPlayable=1;
 					};
 					id=5086;
@@ -35769,6 +35780,7 @@ class Mission
 						rank="LIEUTENANT";
 						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
 						name="P10";
+						description="Team Leader";
 						isPlayable=1;
 					};
 					id=5096;
@@ -35846,6 +35858,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						description="Medic";
 						isPlayable=1;
 					};
 					id=5159;
@@ -35906,6 +35919,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="P7";
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=5097;
@@ -35984,6 +35998,7 @@ class Mission
 					class Attributes
 					{
 						name="P8";
+						description="Sniper";
 						isPlayable=1;
 					};
 					id=5098;
@@ -35992,8 +36007,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -36002,10 +36017,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -36049,8 +36064,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -36059,10 +36074,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -36074,13 +36089,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8303.7021,296.04144,2106.4014};
+						position[]={8303.7021,296.04144,2106.4011};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
 						name="P9";
+						description="Grenadier";
 						isPlayable=1;
 					};
 					id=5099;
