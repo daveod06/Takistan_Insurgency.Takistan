@@ -833,3 +833,154 @@ this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "ItemWatch";
 this linkItem "ItemRadio";
+
+
+
+
+
+
+
+
+
+
+
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "m88_khaki_afghanka";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 5 do {this addItemToUniform "rhs_mag_rgd5";};
+for "_i" from 1 to 2 do {this addItemToUniform "rhs_30Rnd_545x39_7N6_AK";};
+this addVest "6B3_RHS_RF";
+this addBackpack "rhs_assault_umbts_engineer_empty";
+for "_i" from 1 to 8 do {this addItemToVest "rhs_30Rnd_545x39_7N6_AK";};
+this addHeadgear "rhs_fieldcap_khk";
+this addGoggles "G_Aviator";
+
+this addWeapon "rhs_weap_aks74";
+this addPrimaryWeaponItem "rhs_acc_dtk1983";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+
+
+
+
+
+
+
+
+
+
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "rhs_uniform_df15_tan";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+this addItemToUniform "rhs_mag_nspn_yellow";
+this addItemToUniform "rhs_mag_rdg2_white";
+this addVest "rhs_vest_pistol_holster";
+for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_9x18_8_57N181S";};
+this addBackpack "rhs_d6_Parachute_backpack";
+this addHeadgear "rhs_zsh7a_mike";
+this addGoggles "G_Aviator";
+
+this addWeapon "rhs_weap_makarov_pm";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+
+this setFace "WhiteHead_20";
+this setSpeaker "male02gre";
+
+
+
+
+
+
+
+
+
+
+
+
+
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+this forceAddUniform "m88_khaki_standard";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+this addItemToUniform "rhs_mag_nspn_yellow";
+this addItemToUniform "rhs_mag_rdg2_white";
+this addVest "rhs_vest_pistol_holster";
+for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_9x18_8_57N181S";};
+this addHeadgear "rhs_zsh7a_mike_green";
+this addGoggles "G_Aviator";
+
+this addWeapon "rhs_weap_makarov_pm";
+
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+
+
+
+
+
+23:58:15 Warning Message: Cannot load texture cup\wheeledvehicles\cup_wheeledvehicles_suv\data\suv_body_co.paa.
+23:58:15 Warning Message: Cannot load texture cup\wheeledvehicles\cup_wheeledvehicles_uaz\data\metal_detail_dt.paa.
+23:58:15 Warning Message: Cannot load texture cup\wheeledvehicles\cup_wheeledvehicles_suv\data\suv_body_nohq.paa.
+23:58:15 Warning Message: Cannot load texture cup\wheeledvehicles\cup_wheeledvehicles_suv\data\suv_body_smdi.paa.
+23:58:15 Warning Message: Cannot load texture cup\wheeledvehicles\cup_wheeledvehicles_suv\data\suv_body_ti_ca.paa.
+23:58:19 Warning Message: Cannot load texture cup\wheeledvehicles\cup_wheeledvehicles_suv\data\suv_body_co.paa.
+23:58:19 Warning Message: Cannot load texture cup\wheeledvehicles\cup_wheeledvehicles_suv\data\suv_body_nohq.paa.
+23:58:19 Warning Message: Cannot load texture cup\wheeledvehicles\cup_wheeledvehicles_suv\data\suv_body_smdi.paa.
+23:58:19 Warning Message: Cannot load texture cup\wheeledvehicles\cup_wheeledvehicles_suv\data\suv_body_ti_ca.paa.
+
+
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6fus1_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6wings_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6cargo1_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6inst2_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6podpinka_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6fus2_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6fus3_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6fotel_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6cargo2_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6uaz_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6pilot_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6sklo_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6rotor_co.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6zeg1_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6zeg4_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6zeg2_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6inst1night_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6inst3night_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6inst4night_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\textures\mi6_rotorblur_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\data\tex\szklo_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\data\tex\szklo_ca.paa.
+23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\data\tex\globalenv_ca.paa.

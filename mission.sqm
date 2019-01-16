@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=5787;
+		nextID=5811;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=24;
+		nextID=30;
 	};
 	class Camera
 	{
-		pos[]={8380.3408,464.96194,1934.0841};
-		dir[]={-0.77835882,-0.52326226,0.34726766};
-		up[]={-0.47793391,0.8520987,0.21322992};
-		aside[]={0.40748453,1.7797574e-006,0.91332388};
+		pos[]={8307.2734,300.15631,2109.7957};
+		dir[]={-0.96381509,-0.26026979,0.059772555};
+		up[]={-0.25991434,0.96547514,0.01611845};
+		aside[]={0.061906625,7.7875302e-007,0.99818736};
 	};
 };
 binarizationWanted=0;
@@ -437,7 +437,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1027;
+		items=1028;
 		class Item0
 		{
 			dataType="Marker";
@@ -31826,7 +31826,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_vdv_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vest_commander""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_rdg2_white"";}; " \n "this addItemToVest ""rhs_mag_rdg2_black""; " \n "this addItemToVest ""rhs_mag_nspn_yellow""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_9x18_8_57N181S"";}; " \n "this addBackpack ""RD_54_69_R148""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""345th_Jump_Helmet""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_aks74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P18";
 						description="Team Leader";
 						isPlayable=1;
@@ -31907,7 +31907,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_vdv_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addBackpack ""rhs_medic_bag""; " \n "this addItemToBackpack ""Medikit""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""FirstAidKit"";}; " \n "this addHeadgear ""345th_Jump_Helmet""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_aks74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P20";
 						description="Medic";
 						isPlayable=1;
@@ -31988,7 +31988,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_vdv_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""345th_Jump_Helmet""; " \n " " \n "this addWeapon ""rhs_weap_aks74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P19";
 						description="Rifleman";
 						isPlayable=1;
@@ -32068,7 +32068,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_vdv_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 4 do {this addItemToUniform ""rhs_mag_9x18_8_57N181S"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "this addBackpack ""rhs_rpg_empty""; " \n "for ""_i"" from 1 to 4 do {this addItemToBackpack ""rhs_rpg7_PG7V_mag"";}; " \n "this addHeadgear ""345th_Jump_Helmet""; " \n " " \n "this addWeapon ""rhs_weap_rpg7""; " \n "this addPrimaryWeaponItem ""rhs_acc_pgo7v""; " \n "this addWeapon ""rhs_weap_makarov_pm""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P17";
 						description="Grenadier";
 						isPlayable=1;
@@ -32168,7 +32168,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.58487302;
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_vdv_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""hlc_60Rnd_545x39_t_rpk"";}; " \n "this addBackpack ""rhs_sidor""; " \n "for ""_i"" from 1 to 3 do {this addItemToBackpack ""hlc_60Rnd_545x39_t_rpk"";}; " \n "this addHeadgear ""345th_Jump_Helmet""; " \n " " \n "this addWeapon ""hlc_rifle_rpk74n""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P16";
 						description="Autorifleman";
 						isPlayable=1;
@@ -32304,9 +32304,9 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_standard""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "this addItemToUniform ""rhs_mag_nspn_yellow""; " \n "this addItemToUniform ""rhs_mag_rdg2_white""; " \n "this addVest ""rhs_vest_pistol_holster""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_9x18_8_57N181S"";}; " \n "this addHeadgear ""rhs_zsh7a_mike_green""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_makarov_pm""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P22";
-                        description="Pilot";
+						description="Helicopter Pilot";
 						isPlayable=1;
 					};
 					id=5102;
@@ -32385,9 +32385,9 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""rhs_uniform_df15_tan""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "this addItemToUniform ""rhs_mag_nspn_yellow""; " \n "this addItemToUniform ""rhs_mag_rdg2_white""; " \n "this addVest ""rhs_vest_pistol_holster""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_9x18_8_57N181S"";}; " \n "this addBackpack ""rhs_d6_Parachute_backpack""; " \n "this addHeadgear ""rhs_zsh7a_mike""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_makarov_pm""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; }";
 						name="P21";
-                        description="Pilot";
+						description="Fighter Pilot";
 						isPlayable=1;
 					};
 					id=5103;
@@ -34433,7 +34433,7 @@ class Mission
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addVest ""6B3_RHS_RF""; " \n "this addBackpack ""rhs_assault_umbts_engineer_empty""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_aks74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P5";
 						description="Team Leader";
 						isPlayable=1;
@@ -34507,16 +34507,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8276.3213,296.04144,2115.0857};
+						position[]={8276.3213,296.04144,2115.0859};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addVest ""6B3_RHS_RF""; " \n "this addBackpack ""rhs_assault_umbts_engineer_empty""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_aks74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P4";
-                        description="Medic";
+						description="Medic";
 						isPlayable=1;
 					};
 					id=5106;
@@ -34607,16 +34607,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8273.8145,296.04144,2114.4868};
+						position[]={8273.8145,296.04144,2114.4871};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addVest ""6B3_RHS_RF""; " \n "this addBackpack ""rhs_assault_umbts_engineer_empty""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_aks74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P1";
-                        description="Rifleman";
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=5117;
@@ -34707,16 +34707,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8272.2197,296.04144,2113.1057};
+						position[]={8272.2197,296.04144,2113.106};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addVest ""6B3_RHS_RF""; " \n "this addBackpack ""rhs_assault_umbts_engineer_empty""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_aks74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P2";
-                        description="Machine Gunner";
+						description="Machine Gunner";
 						isPlayable=1;
 					};
 					id=5108;
@@ -34788,16 +34788,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8272.1201,296.04144,2110.8887};
+						position[]={8272.1201,296.04144,2110.8892};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addVest ""6B3_RHS_RF""; " \n "this addBackpack ""rhs_assault_umbts_engineer_empty""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_aks74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P3";
-                        description="Machine Gunner Assistant";
+						description="Machine Gunner Assistant";
 						isPlayable=1;
 					};
 					id=5109;
@@ -34913,7 +34913,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vest_commander""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_rdg2_white"";}; " \n "this addItemToVest ""rhs_mag_rdg2_black""; " \n "this addItemToVest ""rhs_mag_nspn_yellow""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_9x18_8_57N181S"";}; " \n "this addBackpack ""RD_54_69_R148""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P27";
 						description="Team Leader";
 						isPlayable=1;
@@ -34995,9 +34995,9 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addBackpack ""rhs_sidor""; " \n "this addItemToBackpack ""Toolkit""; " \n "this addItemToBackpack ""MineDetector""; " \n "this addItemToBackpack ""DemoCharge_Remote_Mag""; " \n "this addItemToBackpack ""DemoCharge_Remote_Mag""; " \n "this addItemToBackpack ""DemoCharge_Remote_Mag""; " \n "this addItemToBackpack ""DemoCharge_Remote_Mag""; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P23";
-                        description="Engineer";
+						description="Engineer";
 						isPlayable=1;
 					};
 					id=5081;
@@ -35076,9 +35076,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 4 do {this addItemToUniform ""rhs_mag_9x18_8_57N181S"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "this addBackpack ""rhs_rpg_empty""; " \n "for ""_i"" from 1 to 4 do {this addItemToBackpack ""rhs_rpg7_PG7V_mag"";}; " \n "this addHeadgear ""ssh68_camo_green""; " \n " " \n "this addWeapon ""rhs_weap_rpg7""; " \n "this addPrimaryWeaponItem ""rhs_acc_pgo7v""; " \n "this addWeapon ""rhs_weap_makarov_pm""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P24";
-                        description="Grenadier";
+						description="Grenadier";
 						isPlayable=1;
 					};
 					id=5082;
@@ -35157,9 +35157,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addBackpack ""rhs_medic_bag""; " \n "this addItemToBackpack ""Medikit""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""FirstAidKit"";}; " \n "this addHeadgear ""panama_afghanistan""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P25";
-                        description="Rifleman";
+						description="Medic";
 						isPlayable=1;
 					};
 					id=5083;
@@ -35238,9 +35238,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 4 do {this addItemToUniform ""rhs_mag_9x18_8_57N181S"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 15 do {this addItemToVest ""rhs_10Rnd_762x54mmR_7N1"";}; " \n "this addHeadgear ""panama_afghanistan1""; " \n " " \n "this addWeapon ""40th_weap_svd_wood""; " \n "this addPrimaryWeaponItem ""rhs_acc_pso1m2""; " \n "this addWeapon ""rhs_weap_makarov_pm""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P26";
-                        description="Marksman";
+						description="Marksman";
 						isPlayable=1;
 					};
 					id=5084;
@@ -35355,7 +35355,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vest_commander""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_rdg2_white"";}; " \n "this addItemToVest ""rhs_mag_rdg2_black""; " \n "this addItemToVest ""rhs_mag_nspn_yellow""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_9x18_8_57N181S"";}; " \n "this addBackpack ""RD_54_69_R148""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P14";
 						description="Team Leader";
 						isPlayable=1;
@@ -35436,9 +35436,9 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addBackpack ""rhs_sidor""; " \n "this addItemToBackpack ""Toolkit""; " \n "this addItemToBackpack ""MineDetector""; " \n "this addItemToBackpack ""DemoCharge_Remote_Mag""; " \n "this addItemToBackpack ""DemoCharge_Remote_Mag""; " \n "this addItemToBackpack ""DemoCharge_Remote_Mag""; " \n "this addItemToBackpack ""DemoCharge_Remote_Mag""; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P11";
-                        description="Engineer";
+						description="Engineer";
 						isPlayable=1;
 					};
 					id=5087;
@@ -35516,9 +35516,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 4 do {this addItemToUniform ""rhs_mag_9x18_8_57N181S"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "this addItemToVest ""rhs_100Rnd_762x54mmR_green""; " \n "this addBackpack ""rhs_sidor""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""rhs_100Rnd_762x54mmR_green"";}; " \n "this addHeadgear ""ssh68_camo_green""; " \n " " \n "this addWeapon ""rhs_weap_pkm""; " \n "this addWeapon ""rhs_weap_makarov_pm""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P12";
-                        description="Machine Gunner";
+						description="Machine Gunner";
 						isPlayable=1;
 					};
 					id=5090;
@@ -35596,9 +35596,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addBackpack ""rhs_sidor""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""rhs_100Rnd_762x54mmR_green"";}; " \n "this addHeadgear ""ssh68_camo_green""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P13";
-                        description="Machine Gunner Assistant";
+						description="Machine Gunner Assistant";
 						isPlayable=1;
 					};
 					id=5091;
@@ -35676,9 +35676,10 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addBackpack ""rhs_medic_bag""; " \n "this addItemToBackpack ""Medikit""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""FirstAidKit"";}; " \n "this addHeadgear ""panama_afghanistan""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P15";
+						description="Medic";
 						isPlayable=1;
-                        description="Rifleman";
 					};
 					id=5093;
 					type="O_G_Soldier_universal_F";
@@ -35792,7 +35793,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{doStop this;this forceSpeed 0;this enableMimics false;}";
+						init="call{doStop this;this forceSpeed 0;this enableMimics false;" \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vest_commander""; " \n "for ""_i"" from 1 to 2 do {this addItemToVest ""rhs_mag_rdg2_white"";}; " \n "this addItemToVest ""rhs_mag_rdg2_black""; " \n "this addItemToVest ""rhs_mag_nspn_yellow""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""rhs_mag_9x18_8_57N181S"";}; " \n "this addBackpack ""RD_54_69_R148""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P10";
 						description="Team Leader";
 						isPlayable=1;
@@ -35872,11 +35873,13 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 3 do {this addItemToVest ""hlc_60Rnd_545x39_t_rpk"";}; " \n "this addBackpack ""rhs_sidor""; " \n "for ""_i"" from 1 to 3 do {this addItemToBackpack ""hlc_60Rnd_545x39_t_rpk"";}; " \n "this addHeadgear ""ssh68_camo_green""; " \n " " \n "this addWeapon ""hlc_rifle_rpk74n""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
+						name="P6";
 						description="Medic";
 						isPlayable=1;
 					};
 					id=5159;
-					type="OKSVA_Autorifleman_MSV";
+					type="O_G_Soldier_universal_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35932,6 +35935,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addHeadgear ""ssh68_camo_green""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P7";
 						description="Rifleman";
 						isPlayable=1;
@@ -36011,6 +36015,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "for ""_i"" from 1 to 4 do {this addItemToUniform ""rhs_mag_9x18_8_57N181S"";}; " \n "this addVest ""rhs_vydra_3m""; " \n "this addItemToVest ""rhs_rpg26_mag""; " \n "for ""_i"" from 1 to 23 do {this addItemToVest ""rhsgref_5Rnd_762x54_m38"";}; " \n "this addHeadgear ""rhs_fieldcap_khk""; " \n " " \n "this addWeapon ""rhs_weap_m38_rail""; " \n "this addPrimaryWeaponItem ""rhs_acc_dh520x56""; " \n "this addWeapon ""rhs_weap_rpg26""; " \n "this addWeapon ""rhs_weap_makarov_pm""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P8";
 						description="Sniper";
 						isPlayable=1;
@@ -36109,8 +36114,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "this forceAddUniform ""m88_khaki_afghanka""; " \n "for ""_i"" from 1 to 2 do {this addItemToUniform ""FirstAidKit"";}; " \n "for ""_i"" from 1 to 5 do {this addItemToUniform ""rhs_mag_rgd5"";}; " \n "this addItemToUniform ""rhs_30Rnd_545x39_7N6_AK""; " \n "this addVest ""rhs_vydra_3m""; " \n "for ""_i"" from 1 to 8 do {this addItemToVest ""rhs_30Rnd_545x39_7N6_AK"";}; " \n "this addBackpack ""rhs_medic_bag""; " \n "this addItemToBackpack ""Medikit""; " \n "for ""_i"" from 1 to 2 do {this addItemToBackpack ""FirstAidKit"";}; " \n "this addHeadgear ""panama_afghanistan""; " \n "this addGoggles ""G_Aviator""; " \n " " \n "this addWeapon ""rhs_weap_ak74""; " \n "this addPrimaryWeaponItem ""rhs_acc_dtk1983""; " \n "this addWeapon ""Binocular""; " \n " " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio"";}";
 						name="P9";
-						description="Grenadier";
+						description="Medic";
 						isPlayable=1;
 					};
 					id=5099;
@@ -38834,10 +38840,70 @@ class Mission
 					class Attributes
 					{
 						name="d30_0G";
-						isPlayer=1;
 					};
 					id=5776;
 					type="OKSVA_Gunner_MSV";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RHS_Male02RUS";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 			};
 			class Attributes
@@ -38965,6 +39031,34 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item1027
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8359.8125,296.04144,2011.0087};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=5790;
+					type="B_officer_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5789;
 		};
 	};
 };
