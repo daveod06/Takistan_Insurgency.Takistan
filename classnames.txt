@@ -984,3 +984,18 @@ this linkItem "ItemRadio";
 23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\data\tex\szklo_ca.paa.
 23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\data\tex\szklo_ca.paa.
 23:58:28 Warning Message: Cannot load texture cup\airvehicles\cup_airvehicles_mi6\data\tex\globalenv_ca.paa.
+
+
+ 0:21:03 Error in expression <rue;
+if(_a2cc==1)then{"colorCorrections"ppEffectAdjust[0.9,1,0,[0.1,0.1,0.1,-0.1>
+ 0:21:03   Error position: <ppEffectAdjust[0.9,1,0,[0.1,0.1,0.1,-0.1>
+ 0:21:03   Error Type Number,Not a Number, expected Number
+ 0:21:03 File common\client\ais_injury\func\fn_impactEffect.sqf [tcb_fnc_impactEffect], line 14
+ 0:21:03 Error in expression <ngth=4+(random 1)};
+_power=_strength+4;
+addCamShake[_power,0.4,30];
+_color=1-_st>
+ 0:21:03   Error position: <addCamShake[_power,0.4,30];
+_color=1-_st>
+ 0:21:03   Error Type Number,Not a Number, expected Number
+ 0:21:03 File common\client\ais_injury\func\fn_impactEffect.sqf [tcb_fnc_impactEffect], line 10
