@@ -147,6 +147,7 @@ tempLase=createVehicle["LaserTargetCBase",_loc,[],0,"can_collide"];publicVariabl
 tempLase enableSimulation false;tempLase hideObjectGlobal true;
 tempLase setVariable["vehicle",Tooth_OPFOR_CAS_jet,true];
 tempLase setVariable["type",0,true];
+tempLase setVariable["BIS_fnc_initModules_disableAutoActivation",false,true];
 sleep 20;
 if(abortCas)exitWith{deleteVehicle tempLase;sleep 2;deleteVehicle _fakePilot;deleteGroup casGrp;};
 player removeAction _cancel;
